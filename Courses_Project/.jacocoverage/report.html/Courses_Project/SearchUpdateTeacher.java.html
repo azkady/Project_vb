@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>SearchUpdateTeacher.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;Courses_Project&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">Courses_Project</a> &gt; <span class="el_source">SearchUpdateTeacher.java</span></div><h1>SearchUpdateTeacher.java</h1><pre class="source lang-java linenums">package Courses_Project;
+
+
+
+import Config.Teacher;
+import static Courses_Project.Koneksi.con;
+import java.sql.*;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+
+public class SearchUpdateTeacher extends javax.swing.JFrame {
+
+<span class="fc" id="L13">    Koneksi adaw = new Koneksi();</span>
+    private DefaultTableModel model;
+    
+<span class="fc" id="L16">    public SearchUpdateTeacher() {</span>
+<span class="fc" id="L17">        initComponents();</span>
+        
+<span class="fc" id="L19">        jComboBox1.removeItem(&quot;Item 1&quot;);</span>
+<span class="fc" id="L20">        jComboBox1.removeItem(&quot;Item 2&quot;);</span>
+<span class="fc" id="L21">        jComboBox1.removeItem(&quot;Item 3&quot;);</span>
+<span class="fc" id="L22">        jComboBox1.removeItem(&quot;Item 4&quot;);</span>
+<span class="fc" id="L23">        jComboBox1.addItem(&quot;Teacher_ID&quot;);</span>
+<span class="fc" id="L24">        jComboBox1.addItem(&quot;Teacher_Name&quot;);</span>
+<span class="fc" id="L25">        jComboBox1.addItem(&quot;Teacher_Lesson&quot;);</span>
+<span class="fc" id="L26">        jComboBox1.addItem(&quot;Teacher_Contact&quot;);</span>
+
+<span class="fc" id="L28">        adaw.Koneksi();</span>
+        
+<span class="fc" id="L30">        showDataTeacher();</span>
+<span class="fc" id="L31">    }  </span>
+    
+    private void showDataTeacher(){
+<span class="fc" id="L34">        model = new DefaultTableModel();</span>
+<span class="fc" id="L35">        jTable1.setModel(model);</span>
+<span class="fc" id="L36">        model.addColumn(&quot;Teacher_ID&quot;);</span>
+<span class="fc" id="L37">        model.addColumn(&quot;Teacher_Name&quot;);</span>
+<span class="fc" id="L38">        model.addColumn(&quot;Teacher_Lesson&quot;);</span>
+<span class="fc" id="L39">        model.addColumn(&quot;Teacher_Contact&quot;);</span>
+<span class="fc" id="L40">        model.getDataVector().removeAllElements();</span>
+<span class="fc" id="L41">        model.fireTableDataChanged();</span>
+        
+        try{
+<span class="fc" id="L44">            String str = &quot;SELECT * FROM teacher&quot;;</span>
+<span class="fc" id="L45">            PreparedStatement prps = con.prepareStatement(str);</span>
+<span class="fc" id="L46">            ResultSet rs = prps.executeQuery();</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">            while(rs.next()){</span>
+<span class="fc" id="L48">                Object[] obj = new Object[4];</span>
+<span class="fc" id="L49">                obj[0] = rs.getString(&quot;Teacher_ID&quot;); </span>
+<span class="fc" id="L50">                obj[1] = rs.getString(&quot;Teacher_Name&quot;);</span>
+<span class="fc" id="L51">                obj[2] = rs.getString(&quot;Teacher_Lesson&quot;);</span>
+<span class="fc" id="L52">                obj[3] = rs.getString(&quot;Teacher_Contact&quot;);</span>
+
+<span class="fc" id="L54">                model.addRow(obj);</span>
+<span class="fc" id="L55">            }</span>
+<span class="nc" id="L56">        }catch(SQLException qwef){</span>
+<span class="nc" id="L57">            JOptionPane.showMessageDialog(this, &quot;Can't Show Table Teacher&quot;);</span>
+<span class="fc" id="L58">        }</span>
+<span class="fc" id="L59">    }</span>
+
+    @SuppressWarnings(&quot;unchecked&quot;)
+    // &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+<span class="fc" id="L65">        jLabel1 = new javax.swing.JLabel();</span>
+<span class="fc" id="L66">        jComboBox1 = new javax.swing.JComboBox();</span>
+<span class="fc" id="L67">        jLabel3 = new javax.swing.JLabel();</span>
+<span class="fc" id="L68">        jTextField1 = new javax.swing.JTextField();</span>
+<span class="fc" id="L69">        btnSearch = new javax.swing.JButton();</span>
+<span class="fc" id="L70">        jScrollPane1 = new javax.swing.JScrollPane();</span>
+<span class="fc" id="L71">        jTable1 = new javax.swing.JTable();</span>
+<span class="fc" id="L72">        jLabel2 = new javax.swing.JLabel();</span>
+<span class="fc" id="L73">        btnBack = new javax.swing.JButton();</span>
+<span class="fc" id="L74">        btnDelete = new javax.swing.JButton();</span>
+<span class="fc" id="L75">        btnUpdate = new javax.swing.JButton();</span>
+<span class="fc" id="L76">        jTextField4 = new javax.swing.JTextField();</span>
+<span class="fc" id="L77">        jTextField2 = new javax.swing.JTextField();</span>
+<span class="fc" id="L78">        jTextField3 = new javax.swing.JTextField();</span>
+<span class="fc" id="L79">        jTextField5 = new javax.swing.JTextField();</span>
+<span class="fc" id="L80">        jLabel5 = new javax.swing.JLabel();</span>
+<span class="fc" id="L81">        jLabel4 = new javax.swing.JLabel();</span>
+<span class="fc" id="L82">        jLabel6 = new javax.swing.JLabel();</span>
+<span class="fc" id="L83">        jLabel7 = new javax.swing.JLabel();</span>
+<span class="fc" id="L84">        jLabel8 = new javax.swing.JLabel();</span>
+<span class="fc" id="L85">        btnClear = new javax.swing.JButton();</span>
+
+<span class="fc" id="L87">        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);</span>
+<span class="fc" id="L88">        getContentPane().setLayout(null);</span>
+
+<span class="fc" id="L90">        jLabel1.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 36)); // NOI18N</span>
+<span class="fc" id="L91">        jLabel1.setText(&quot;Search Teacher&quot;);</span>
+<span class="fc" id="L92">        getContentPane().add(jLabel1);</span>
+<span class="fc" id="L93">        jLabel1.setBounds(190, 50, 280, 44);</span>
+
+<span class="fc" id="L95">        jComboBox1.setFont(new java.awt.Font(&quot;Tahoma&quot;, 0, 18)); // NOI18N</span>
+<span class="fc" id="L96">        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { &quot;Item 1&quot;, &quot;Item 2&quot;, &quot;Item 3&quot;, &quot;Item 4&quot; }));</span>
+<span class="fc" id="L97">        getContentPane().add(jComboBox1);</span>
+<span class="fc" id="L98">        jComboBox1.setBounds(50, 190, 220, 40);</span>
+
+<span class="fc" id="L100">        jLabel3.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L101">        jLabel3.setText(&quot;Kriteria&quot;);</span>
+<span class="fc" id="L102">        getContentPane().add(jLabel3);</span>
+<span class="fc" id="L103">        jLabel3.setBounds(370, 140, 150, 30);</span>
+
+<span class="fc" id="L105">        jTextField1.setFont(new java.awt.Font(&quot;Tahoma&quot;, 0, 18)); // NOI18N</span>
+<span class="fc" id="L106">        getContentPane().add(jTextField1);</span>
+<span class="fc" id="L107">        jTextField1.setBounds(370, 190, 220, 40);</span>
+
+<span class="fc" id="L109">        btnSearch.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L110">        btnSearch.setText(&quot;Search&quot;);</span>
+<span class="fc" id="L111">        btnSearch.addActionListener(new java.awt.event.ActionListener() {</span>
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+<span class="fc" id="L113">                btnSearchActionPerformed(evt);</span>
+<span class="fc" id="L114">            }</span>
+        });
+<span class="fc" id="L116">        getContentPane().add(btnSearch);</span>
+<span class="fc" id="L117">        btnSearch.setBounds(50, 260, 220, 50);</span>
+
+<span class="fc" id="L119">        jTable1.setFont(new java.awt.Font(&quot;Tahoma&quot;, 0, 14)); // NOI18N</span>
+<span class="fc" id="L120">        jTable1.setModel(new javax.swing.table.DefaultTableModel(</span>
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                &quot;Title 1&quot;, &quot;Title 2&quot;, &quot;Title 3&quot;, &quot;Title 4&quot;
+            }
+        ));
+<span class="fc" id="L131">        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {</span>
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+<span class="fc" id="L133">                jTable1MouseClicked(evt);</span>
+<span class="fc" id="L134">            }</span>
+        });
+<span class="fc" id="L136">        jScrollPane1.setViewportView(jTable1);</span>
+
+<span class="fc" id="L138">        getContentPane().add(jScrollPane1);</span>
+<span class="fc" id="L139">        jScrollPane1.setBounds(50, 330, 540, 308);</span>
+
+<span class="fc" id="L141">        jLabel2.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L142">        jLabel2.setText(&quot;Based Column&quot;);</span>
+<span class="fc" id="L143">        getContentPane().add(jLabel2);</span>
+<span class="fc" id="L144">        jLabel2.setBounds(50, 140, 200, 30);</span>
+
+<span class="fc" id="L146">        btnBack.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L147">        btnBack.setText(&quot;Back&quot;);</span>
+<span class="fc" id="L148">        btnBack.addActionListener(new java.awt.event.ActionListener() {</span>
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+<span class="fc" id="L150">                btnBackActionPerformed(evt);</span>
+<span class="fc" id="L151">            }</span>
+        });
+<span class="fc" id="L153">        getContentPane().add(btnBack);</span>
+<span class="fc" id="L154">        btnBack.setBounds(830, 590, 220, 50);</span>
+
+<span class="fc" id="L156">        btnDelete.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L157">        btnDelete.setText(&quot;Delete&quot;);</span>
+<span class="fc" id="L158">        btnDelete.addActionListener(new java.awt.event.ActionListener() {</span>
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+<span class="fc" id="L160">                btnDeleteActionPerformed(evt);</span>
+<span class="fc" id="L161">            }</span>
+        });
+<span class="fc" id="L163">        getContentPane().add(btnDelete);</span>
+<span class="fc" id="L164">        btnDelete.setBounds(370, 260, 220, 50);</span>
+
+<span class="fc" id="L166">        btnUpdate.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L167">        btnUpdate.setText(&quot;Update&quot;);</span>
+<span class="fc" id="L168">        btnUpdate.addActionListener(new java.awt.event.ActionListener() {</span>
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+<span class="fc" id="L170">                btnUpdateActionPerformed(evt);</span>
+<span class="fc" id="L171">            }</span>
+        });
+<span class="fc" id="L173">        getContentPane().add(btnUpdate);</span>
+<span class="fc" id="L174">        btnUpdate.setBounds(660, 520, 220, 50);</span>
+
+<span class="fc" id="L176">        jTextField4.setFont(new java.awt.Font(&quot;Tahoma&quot;, 0, 18)); // NOI18N</span>
+<span class="fc" id="L177">        getContentPane().add(jTextField4);</span>
+<span class="fc" id="L178">        jTextField4.setBounds(950, 310, 270, 50);</span>
+
+<span class="fc" id="L180">        jTextField2.setFont(new java.awt.Font(&quot;Tahoma&quot;, 0, 18)); // NOI18N</span>
+<span class="fc" id="L181">        jTextField2.addActionListener(new java.awt.event.ActionListener() {</span>
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+<span class="nc" id="L183">                jTextField2ActionPerformed(evt);</span>
+<span class="nc" id="L184">            }</span>
+        });
+<span class="fc" id="L186">        getContentPane().add(jTextField2);</span>
+<span class="fc" id="L187">        jTextField2.setBounds(950, 170, 270, 50);</span>
+
+<span class="fc" id="L189">        jTextField3.setFont(new java.awt.Font(&quot;Tahoma&quot;, 0, 18)); // NOI18N</span>
+<span class="fc" id="L190">        getContentPane().add(jTextField3);</span>
+<span class="fc" id="L191">        jTextField3.setBounds(950, 240, 270, 50);</span>
+
+<span class="fc" id="L193">        jTextField5.setFont(new java.awt.Font(&quot;Tahoma&quot;, 0, 18)); // NOI18N</span>
+<span class="fc" id="L194">        getContentPane().add(jTextField5);</span>
+<span class="fc" id="L195">        jTextField5.setBounds(950, 380, 270, 50);</span>
+
+<span class="fc" id="L197">        jLabel5.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L198">        jLabel5.setText(&quot;Teacher Contact&quot;);</span>
+<span class="fc" id="L199">        getContentPane().add(jLabel5);</span>
+<span class="fc" id="L200">        jLabel5.setBounds(660, 390, 195, 29);</span>
+
+<span class="fc" id="L202">        jLabel4.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L203">        jLabel4.setText(&quot;Teacher ID&quot;);</span>
+<span class="fc" id="L204">        getContentPane().add(jLabel4);</span>
+<span class="fc" id="L205">        jLabel4.setBounds(660, 180, 132, 29);</span>
+
+<span class="fc" id="L207">        jLabel6.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L208">        jLabel6.setText(&quot;Teacher Name&quot;);</span>
+<span class="fc" id="L209">        getContentPane().add(jLabel6);</span>
+<span class="fc" id="L210">        jLabel6.setBounds(660, 250, 172, 29);</span>
+
+<span class="fc" id="L212">        jLabel7.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L213">        jLabel7.setText(&quot;Teacher Lesson&quot;);</span>
+<span class="fc" id="L214">        getContentPane().add(jLabel7);</span>
+<span class="fc" id="L215">        jLabel7.setBounds(660, 320, 184, 29);</span>
+
+<span class="fc" id="L217">        jLabel8.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 36)); // NOI18N</span>
+<span class="fc" id="L218">        jLabel8.setText(&quot;Select and Update Data Teacher&quot;);</span>
+<span class="fc" id="L219">        getContentPane().add(jLabel8);</span>
+<span class="fc" id="L220">        jLabel8.setBounds(660, 90, 590, 44);</span>
+
+<span class="fc" id="L222">        btnClear.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L223">        btnClear.setText(&quot;Clear&quot;);</span>
+<span class="fc" id="L224">        btnClear.addActionListener(new java.awt.event.ActionListener() {</span>
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+<span class="fc" id="L226">                btnClearActionPerformed(evt);</span>
+<span class="fc" id="L227">            }</span>
+        });
+<span class="fc" id="L229">        getContentPane().add(btnClear);</span>
+<span class="fc" id="L230">        btnClear.setBounds(990, 520, 220, 50);</span>
+
+<span class="fc" id="L232">        setSize(new java.awt.Dimension(1318, 747));</span>
+<span class="fc" id="L233">        setLocationRelativeTo(null);</span>
+<span class="fc" id="L234">    }// &lt;/editor-fold&gt;//GEN-END:initComponents</span>
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+<span class="fc" id="L237">        this.setVisible(false);</span>
+<span class="fc" id="L238">        new MenuTeacher().setVisible(true);</span>
+<span class="fc" id="L239">    }//GEN-LAST:event_btnBackActionPerformed</span>
+
+    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
+<span class="fc" id="L242">        jComboBox1.setSelectedItem(&quot;Teacher_ID&quot;);</span>
+<span class="fc" id="L243">        jTextField1.setText(null);</span>
+<span class="fc" id="L244">        jTextField2.setText(null);</span>
+<span class="fc" id="L245">        jTextField4.setText(null);</span>
+<span class="fc" id="L246">        jTextField3.setText(null);</span>
+<span class="fc" id="L247">        jTextField5.setText(null);</span>
+<span class="fc" id="L248">    }//GEN-LAST:event_btnClearActionPerformed</span>
+
+    
+    
+    public int Search (){
+<span class="fc" id="L253">        int i = 0;</span>
+        
+        try{
+<span class="fc" id="L256">            model.getDataVector().removeAllElements();</span>
+<span class="fc" id="L257">            model.fireTableDataChanged();</span>
+<span class="fc" id="L258">            String a = (String) jComboBox1.getSelectedItem();</span>
+<span class="fc" id="L259">            String b = jTextField1.getText();</span>
+<span class="pc bpc" id="L260" title="1 of 2 branches missed.">            if(b.equals(&quot;&quot;)){</span>
+<span class="nc" id="L261">                JOptionPane.showMessageDialog(null, &quot;Please Insert Kriteria to Search, Update Or Delete&quot;);</span>
+            }else{
+<span class="fc" id="L263">                String str = &quot;SELECT * FROM teacher WHERE &quot;+ a +&quot; = '&quot;+ b +&quot;'&quot;;</span>
+<span class="fc" id="L264">                PreparedStatement ps = con.prepareStatement(str);</span>
+<span class="fc" id="L265">                ResultSet rs = ps.executeQuery();</span>
+<span class="fc bfc" id="L266" title="All 2 branches covered.">                while(rs.next()){</span>
+<span class="fc" id="L267">                    Object[] obj = new Object[4];</span>
+<span class="fc" id="L268">                    obj[0] = rs.getString(&quot;Teacher_ID&quot;); </span>
+<span class="fc" id="L269">                    obj[1] = rs.getString(&quot;Teacher_Name&quot;);</span>
+<span class="fc" id="L270">                    obj[2] = rs.getString(&quot;Teacher_Lesson&quot;);</span>
+<span class="fc" id="L271">                    obj[3] = rs.getString(&quot;Teacher_Contact&quot;);</span>
+
+<span class="fc" id="L273">                    model.addRow(obj);</span>
+
+<span class="fc" id="L275">                }</span>
+<span class="fc" id="L276">                i = 1;</span>
+            }
+<span class="nc" id="L278">        }catch(SQLException qwef){</span>
+<span class="nc" id="L279">            JOptionPane.showMessageDialog(this, &quot;Can't Show Table Teacher&quot;);</span>
+<span class="fc" id="L280">        }</span>
+        
+<span class="fc" id="L282">        return i;</span>
+    
+    
+    }
+    private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
+
+<span class="fc" id="L288"> Search();</span>
+            
+//        try{
+//            model.getDataVector().removeAllElements();
+//            model.fireTableDataChanged();
+//            String a = (String) jComboBox1.getSelectedItem();
+//            String b = jTextField1.getText();
+//            if(b.equals(&quot;&quot;)){
+//                JOptionPane.showMessageDialog(null, &quot;Please Insert Kriteria To Search, Update Or Delete&quot;);
+//            }else{
+//                String str = &quot;SELECT * FROM teacher WHERE &quot;+ a +&quot; = '&quot;+ b +&quot;'&quot;;
+//                PreparedStatement ps = con.prepareStatement(str);
+//                ResultSet rs = ps.executeQuery();
+//                while(rs.next()){
+//                    Object[] obj = new Object[4];
+//                    obj[0] = rs.getString(&quot;Teacher_ID&quot;); 
+//                    obj[1] = rs.getString(&quot;Teacher_Name&quot;);
+//                    obj[2] = rs.getString(&quot;Teacher_Lesson&quot;);
+//                    obj[3] = rs.getString(&quot;Teacher_Contact&quot;);
+//
+//                    model.addRow(obj);
+//                }
+//            }    
+//        }catch(SQLException qwef){
+//            JOptionPane.showMessageDialog(this, &quot;Can't Show Table Teacher&quot;);
+//        }
+<span class="fc" id="L314">    }//GEN-LAST:event_btnSearchActionPerformed</span>
+
+    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+<span class="fc" id="L317">      Teacher UT = new Teacher();</span>
+<span class="fc" id="L318">        UT.setCombo_column((String) jComboBox1.getSelectedItem());</span>
+<span class="fc" id="L319">        UT.setKriteria(jTextField1.getText());</span>
+<span class="fc" id="L320">        UT.setTeacher_id(jTextField2.getText());</span>
+<span class="fc" id="L321">        UT.setTeacher_name(jTextField3.getText());</span>
+<span class="fc" id="L322">        UT.setTeacher_lesson(jTextField4.getText());</span>
+<span class="fc" id="L323">        UT.setTeacher_contact(jTextField5.getText());</span>
+        
+<span class="fc" id="L325">        int i = UT.Update_Teacher();</span>
+<span class="fc" id="L326">        showDataTeacher();</span>
+        
+        
+//        try{
+//            model.getDataVector().removeAllElements();
+//            model.fireTableDataChanged();
+//            String a = (String) jComboBox1.getSelectedItem();
+//            String b = jTextField1.getText();
+//            String c = jTextField2.getText();
+//            String d = jTextField3.getText();
+//            String e = jTextField4.getText();
+//            String f = jTextField5.getText();
+//            if(b.equals(&quot;&quot;)){
+//                JOptionPane.showMessageDialog(null, &quot;Please Insert Kriteria To Search, Update Or Delate&quot;);
+//            }else{
+//                if(c.equals(&quot;&quot;)|d.equals(&quot;&quot;)|e.equals(&quot;&quot;)|f.equals(&quot;&quot;)){
+//                    JOptionPane.showMessageDialog(null, &quot;Please Insert All Data&quot;);
+//                }else{
+//                    if(f.matches(&quot;[0-9]+&quot;)){
+//                        String str = &quot;UPDATE teacher SET &quot;
+//                                + &quot;Teacher_ID ='&quot;+c+&quot;',&quot;
+//                                + &quot;Teacher_Name ='&quot;+d+&quot;',&quot;
+//                                + &quot;Teacher_Lesson ='&quot;+e+&quot;',&quot;
+//                                + &quot;Teacher_Contact ='&quot;+f+&quot;'&quot;
+//                                + &quot;WHERE &quot;+ a +&quot; = '&quot;+ b +&quot;'&quot;;
+//                        PreparedStatement ps = con.prepareStatement(str);
+//                        int rs = ps.executeUpdate();
+//                        JOptionPane.showMessageDialog(this, &quot;Update Data Succses&quot;);
+//                    }else{
+//                        JOptionPane.showMessageDialog(null, &quot;Please Update Contact Correctly&quot;);
+//                    }
+//                }
+//            }
+//        }catch(SQLException qwef){
+//            JOptionPane.showMessageDialog(this, &quot;Failed Update Data Teacher&quot;);
+//        }
+//        
+//        showDataTeacher();
+<span class="fc" id="L364">    }//GEN-LAST:event_btnUpdateActionPerformed</span>
+
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+       
+         
+<span class="fc" id="L369">        Teacher DC = new Teacher();</span>
+<span class="fc" id="L370">        DC.setTeacher_id(jTextField1.getText());</span>
+<span class="fc" id="L371">        int i = DC.Delete_Teacher();</span>
+<span class="fc" id="L372">        showDataTeacher();</span>
+//        try{
+//            model.getDataVector().removeAllElements();
+//            model.fireTableDataChanged();
+//            String a = (String) jComboBox1.getSelectedItem();
+//            String b = jTextField1.getText();
+//            if(b.equals(&quot;&quot;)){
+//                JOptionPane.showMessageDialog(null, &quot;Please Insert Kriteria To Search, Update Or Delete&quot;);
+//            }else{
+//                String str = &quot;DELETE FROM teacher WHERE &quot;+ a +&quot; = '&quot;+ b +&quot;'&quot;;
+//                PreparedStatement ps = con.prepareStatement(str);
+//                int rs = ps.executeUpdate();
+//                JOptionPane.showMessageDialog(this, &quot;Delete Data Succses&quot;);
+//            }
+//        }catch(SQLException qwef){
+//            JOptionPane.showMessageDialog(this, &quot;Can't Show Table Teacher&quot;);
+//        }
+//        
+//        showDataTeacher();
+<span class="fc" id="L391">    }//GEN-LAST:event_btnDeleteActionPerformed</span>
+
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+<span class="fc" id="L394">        jComboBox1.setSelectedItem(&quot;Teacher_ID&quot;);</span>
+<span class="fc" id="L395">        int tabelklik = jTable1.getSelectedRow();</span>
+<span class="fc" id="L396">        String Kriteria = jTable1.getValueAt(tabelklik, 0).toString();</span>
+<span class="fc" id="L397">        jTextField1.setText(Kriteria);</span>
+<span class="fc" id="L398">        jTextField2.setText(Kriteria);</span>
+<span class="fc" id="L399">        String TeacherName = jTable1.getValueAt(tabelklik, 1).toString();</span>
+<span class="fc" id="L400">        jTextField3.setText(TeacherName);</span>
+<span class="fc" id="L401">        String TeacherClass = jTable1.getValueAt(tabelklik, 2).toString();</span>
+<span class="fc" id="L402">        jTextField4.setText(TeacherClass);</span>
+<span class="fc" id="L403">        String TeacherContact = jTable1.getValueAt(tabelklik, 3).toString();</span>
+<span class="fc" id="L404">        jTextField5.setText(TeacherContact);</span>
+<span class="fc" id="L405">    }//GEN-LAST:event_jTable1MouseClicked</span>
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+<span class="nc" id="L409">    }//GEN-LAST:event_jTextField2ActionPerformed</span>
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnClear;
+    private javax.swing.JButton btnDelete;
+    private javax.swing.JButton btnSearch;
+    private javax.swing.JButton btnUpdate;
+    private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    // End of variables declaration//GEN-END:variables
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>

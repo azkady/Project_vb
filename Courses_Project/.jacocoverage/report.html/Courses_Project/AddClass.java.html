@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>AddClass.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;Courses_Project&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">Courses_Project</a> &gt; <span class="el_source">AddClass.java</span></div><h1>AddClass.java</h1><pre class="source lang-java linenums">package Courses_Project;
+
+import Config.CClass;
+import static Courses_Project.Koneksi.con;
+import java.sql.*;
+import javax.swing.JOptionPane;
+
+public class AddClass extends javax.swing.JFrame {
+
+//    Koneksi adaw = new Koneksi();
+<span class="fc" id="L11">    public AddClass() {</span>
+<span class="fc" id="L12">        initComponents();</span>
+//        adaw.Koneksi();
+<span class="fc" id="L14">    }</span>
+    
+    @SuppressWarnings(&quot;unchecked&quot;)
+    // &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+<span class="fc" id="L20">        btnAddClass = new javax.swing.JButton();</span>
+<span class="fc" id="L21">        jLabel1 = new javax.swing.JLabel();</span>
+<span class="fc" id="L22">        jLabel2 = new javax.swing.JLabel();</span>
+<span class="fc" id="L23">        jLabel3 = new javax.swing.JLabel();</span>
+<span class="fc" id="L24">        jTextField1 = new javax.swing.JTextField();</span>
+<span class="fc" id="L25">        jTextField2 = new javax.swing.JTextField();</span>
+<span class="fc" id="L26">        btnBack = new javax.swing.JButton();</span>
+<span class="fc" id="L27">        jButton1 = new javax.swing.JButton();</span>
+<span class="fc" id="L28">        jLabel4 = new javax.swing.JLabel();</span>
+
+<span class="fc" id="L30">        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);</span>
+<span class="fc" id="L31">        getContentPane().setLayout(null);</span>
+
+<span class="fc" id="L33">        btnAddClass.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L34">        btnAddClass.setText(&quot;Add Class&quot;);</span>
+<span class="fc" id="L35">        btnAddClass.addActionListener(new java.awt.event.ActionListener() {</span>
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+<span class="fc" id="L37">                btnAddClassActionPerformed(evt);</span>
+<span class="fc" id="L38">            }</span>
+        });
+<span class="fc" id="L40">        getContentPane().add(btnAddClass);</span>
+<span class="fc" id="L41">        btnAddClass.setBounds(220, 290, 190, 40);</span>
+
+<span class="fc" id="L43">        jLabel1.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 36)); // NOI18N</span>
+<span class="fc" id="L44">        jLabel1.setText(&quot;Add Class&quot;);</span>
+<span class="fc" id="L45">        getContentPane().add(jLabel1);</span>
+<span class="fc" id="L46">        jLabel1.setBounds(220, 60, 200, 44);</span>
+
+<span class="fc" id="L48">        jLabel2.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L49">        jLabel2.setText(&quot;Student Class&quot;);</span>
+<span class="fc" id="L50">        getContentPane().add(jLabel2);</span>
+<span class="fc" id="L51">        jLabel2.setBounds(110, 150, 162, 29);</span>
+
+<span class="fc" id="L53">        jLabel3.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L54">        jLabel3.setText(&quot;Class Name&quot;);</span>
+<span class="fc" id="L55">        getContentPane().add(jLabel3);</span>
+<span class="fc" id="L56">        jLabel3.setBounds(110, 200, 138, 29);</span>
+
+<span class="fc" id="L58">        jTextField1.setFont(new java.awt.Font(&quot;Tahoma&quot;, 0, 18)); // NOI18N</span>
+<span class="fc" id="L59">        getContentPane().add(jTextField1);</span>
+<span class="fc" id="L60">        jTextField1.setBounds(300, 150, 220, 30);</span>
+
+<span class="fc" id="L62">        jTextField2.setFont(new java.awt.Font(&quot;Tahoma&quot;, 0, 18)); // NOI18N</span>
+<span class="fc" id="L63">        getContentPane().add(jTextField2);</span>
+<span class="fc" id="L64">        jTextField2.setBounds(300, 200, 220, 30);</span>
+
+<span class="fc" id="L66">        btnBack.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L67">        btnBack.setText(&quot;Back&quot;);</span>
+<span class="fc" id="L68">        btnBack.addActionListener(new java.awt.event.ActionListener() {</span>
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+<span class="fc" id="L70">                btnBackActionPerformed(evt);</span>
+<span class="fc" id="L71">            }</span>
+        });
+<span class="fc" id="L73">        getContentPane().add(btnBack);</span>
+<span class="fc" id="L74">        btnBack.setBounds(410, 360, 130, 40);</span>
+
+<span class="fc" id="L76">        jButton1.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L77">        jButton1.setText(&quot;Clear&quot;);</span>
+<span class="fc" id="L78">        jButton1.addActionListener(new java.awt.event.ActionListener() {</span>
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+<span class="fc" id="L80">                jButton1ActionPerformed(evt);</span>
+<span class="fc" id="L81">            }</span>
+        });
+<span class="fc" id="L83">        getContentPane().add(jButton1);</span>
+<span class="fc" id="L84">        jButton1.setBounds(90, 360, 130, 40);</span>
+
+<span class="fc" id="L86">        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/Courses_Project/BackClass.jpg&quot;))); // NOI18N</span>
+<span class="fc" id="L87">        getContentPane().add(jLabel4);</span>
+<span class="fc" id="L88">        jLabel4.setBounds(-230, -130, 1010, 630);</span>
+
+<span class="fc" id="L90">        setSize(new java.awt.Dimension(668, 547));</span>
+<span class="fc" id="L91">        setLocationRelativeTo(null);</span>
+<span class="fc" id="L92">    }// &lt;/editor-fold&gt;//GEN-END:initComponents</span>
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+<span class="fc" id="L95">        this.setVisible(false);</span>
+<span class="fc" id="L96">        new MenuClass().setVisible(true);</span>
+<span class="fc" id="L97">    }//GEN-LAST:event_btnBackActionPerformed</span>
+
+    private void btnAddClassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddClassActionPerformed
+        
+<span class="fc" id="L101">        CClass IC = new CClass();</span>
+<span class="fc" id="L102">        IC.setStudent_class(jTextField1.getText());</span>
+<span class="fc" id="L103">        IC.setClass_name(jTextField2.getText());</span>
+<span class="fc" id="L104">        IC.Insert_Class();</span>
+        
+//        String a = jTextField1.getText();
+//        String b = jTextField2.getText();
+//        if(a.equals(&quot;&quot;)){
+//            JOptionPane.showMessageDialog(this, &quot;Please Insert Student Class&quot;);
+//        }else{
+//            if(b.equals(&quot;&quot;)){
+//                JOptionPane.showMessageDialog(this, &quot;Please Insert Class Name&quot;);
+//            }else{
+//                try{    
+//                    String ins = &quot;INSERT INTO class (Student_Class, Class_Name) VALUES (?,?)&quot;;
+//                    PreparedStatement ps = con.prepareStatement(ins);
+//                    ps.setString(1, a);
+//                    ps.setString(2, b);
+//                    int rt = ps.executeUpdate();
+//                    JOptionPane.showMessageDialog(this, &quot;Class Has Been Saved&quot;);
+//                }catch(SQLException e){
+//                    JOptionPane.showMessageDialog(this, &quot;Failed To Saved Class&quot;);
+//                }
+//            }
+//        }
+<span class="fc" id="L126">    }//GEN-LAST:event_btnAddClassActionPerformed</span>
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+<span class="fc" id="L129">        jTextField1.setText(null);</span>
+<span class="fc" id="L130">        jTextField2.setText(null);</span>
+<span class="fc" id="L131">    }//GEN-LAST:event_jButton1ActionPerformed</span>
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAddClass;
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    // End of variables declaration//GEN-END:variables
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>

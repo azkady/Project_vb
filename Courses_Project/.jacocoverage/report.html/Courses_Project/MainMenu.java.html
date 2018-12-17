@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>MainMenu.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;Courses_Project&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">Courses_Project</a> &gt; <span class="el_source">MainMenu.java</span></div><h1>MainMenu.java</h1><pre class="source lang-java linenums">package Courses_Project;
+
+public class MainMenu extends javax.swing.JFrame {
+
+<span class="fc" id="L5">    public MainMenu() {</span>
+<span class="fc" id="L6">        initComponents();</span>
+<span class="fc" id="L7">    }</span>
+
+    @SuppressWarnings(&quot;unchecked&quot;)
+    // &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+<span class="fc" id="L13">        jLabel1 = new javax.swing.JLabel();</span>
+<span class="fc" id="L14">        btnExit = new javax.swing.JButton();</span>
+<span class="fc" id="L15">        lblClass = new javax.swing.JLabel();</span>
+<span class="fc" id="L16">        lblStudent = new javax.swing.JLabel();</span>
+<span class="fc" id="L17">        lblTeacher = new javax.swing.JLabel();</span>
+<span class="fc" id="L18">        lblSchedule = new javax.swing.JLabel();</span>
+
+<span class="fc" id="L20">        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);</span>
+<span class="fc" id="L21">        getContentPane().setLayout(null);</span>
+
+<span class="fc" id="L23">        jLabel1.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 36)); // NOI18N</span>
+<span class="fc" id="L24">        jLabel1.setText(&quot;Application for The Courses Room Schedule&quot;);</span>
+<span class="fc" id="L25">        getContentPane().add(jLabel1);</span>
+<span class="fc" id="L26">        jLabel1.setBounds(50, 30, 790, 44);</span>
+
+<span class="fc" id="L28">        btnExit.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 24)); // NOI18N</span>
+<span class="fc" id="L29">        btnExit.setText(&quot;EXIT&quot;);</span>
+<span class="fc" id="L30">        btnExit.addActionListener(new java.awt.event.ActionListener() {</span>
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+<span class="nc" id="L32">                btnExitActionPerformed(evt);</span>
+<span class="nc" id="L33">            }</span>
+        });
+<span class="fc" id="L35">        getContentPane().add(btnExit);</span>
+<span class="fc" id="L36">        btnExit.setBounds(350, 670, 200, 50);</span>
+
+<span class="fc" id="L38">        lblClass.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/Courses_Project/Class.png&quot;))); // NOI18N</span>
+<span class="fc" id="L39">        lblClass.addMouseListener(new java.awt.event.MouseAdapter() {</span>
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+<span class="fc" id="L41">                lblClassMouseClicked(evt);</span>
+<span class="fc" id="L42">            }</span>
+        });
+<span class="fc" id="L44">        getContentPane().add(lblClass);</span>
+<span class="fc" id="L45">        lblClass.setBounds(160, 390, 260, 260);</span>
+
+<span class="fc" id="L47">        lblStudent.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/Courses_Project/Student.jpg&quot;))); // NOI18N</span>
+<span class="fc" id="L48">        lblStudent.addMouseListener(new java.awt.event.MouseAdapter() {</span>
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+<span class="fc" id="L50">                lblStudentMouseClicked(evt);</span>
+<span class="fc" id="L51">            }</span>
+        });
+<span class="fc" id="L53">        getContentPane().add(lblStudent);</span>
+<span class="fc" id="L54">        lblStudent.setBounds(480, 100, 260, 260);</span>
+
+<span class="fc" id="L56">        lblTeacher.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/Courses_Project/Teacher.jpg&quot;))); // NOI18N</span>
+<span class="fc" id="L57">        lblTeacher.addMouseListener(new java.awt.event.MouseAdapter() {</span>
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+<span class="fc" id="L59">                lblTeacherMouseClicked(evt);</span>
+<span class="fc" id="L60">            }</span>
+        });
+<span class="fc" id="L62">        getContentPane().add(lblTeacher);</span>
+<span class="fc" id="L63">        lblTeacher.setBounds(160, 100, 260, 260);</span>
+
+<span class="fc" id="L65">        lblSchedule.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/Courses_Project/Schedule.jpg&quot;))); // NOI18N</span>
+<span class="fc" id="L66">        lblSchedule.addMouseListener(new java.awt.event.MouseAdapter() {</span>
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+<span class="fc" id="L68">                lblScheduleMouseClicked(evt);</span>
+<span class="fc" id="L69">            }</span>
+        });
+<span class="fc" id="L71">        getContentPane().add(lblSchedule);</span>
+<span class="fc" id="L72">        lblSchedule.setBounds(480, 390, 260, 260);</span>
+
+<span class="fc" id="L74">        setSize(new java.awt.Dimension(918, 797));</span>
+<span class="fc" id="L75">        setLocationRelativeTo(null);</span>
+<span class="fc" id="L76">    }// &lt;/editor-fold&gt;//GEN-END:initComponents</span>
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+<span class="nc" id="L79">        System.exit(0);</span>
+<span class="nc" id="L80">    }//GEN-LAST:event_btnExitActionPerformed</span>
+
+    private void lblClassMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblClassMouseClicked
+<span class="fc" id="L83">        this.setVisible(false);</span>
+<span class="fc" id="L84">        new MenuClass().setVisible(true);</span>
+<span class="fc" id="L85">    }//GEN-LAST:event_lblClassMouseClicked</span>
+
+    private void lblStudentMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblStudentMouseClicked
+<span class="fc" id="L88">        this.setVisible(false);</span>
+<span class="fc" id="L89">        new MenuStudent().setVisible(true);</span>
+<span class="fc" id="L90">    }//GEN-LAST:event_lblStudentMouseClicked</span>
+
+    private void lblTeacherMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblTeacherMouseClicked
+<span class="fc" id="L93">        this.setVisible(false);</span>
+<span class="fc" id="L94">        new MenuTeacher().setVisible(true);</span>
+<span class="fc" id="L95">    }//GEN-LAST:event_lblTeacherMouseClicked</span>
+
+    private void lblScheduleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblScheduleMouseClicked
+<span class="fc" id="L98">        this.setVisible(false);</span>
+<span class="fc" id="L99">        new MenuRoomSchedule().setVisible(true);</span>
+<span class="fc" id="L100">    }//GEN-LAST:event_lblScheduleMouseClicked</span>
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnExit;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel lblClass;
+    private javax.swing.JLabel lblSchedule;
+    private javax.swing.JLabel lblStudent;
+    private javax.swing.JLabel lblTeacher;
+    // End of variables declaration//GEN-END:variables
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>
