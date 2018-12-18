@@ -19,3 +19,23 @@ C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\bin\Debug
 C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.exe
 C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.xml
 C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.pdb
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.exe.config
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.exe
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.xml
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.pdb
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.exe
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.pdb
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.xml
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.vbprojResolveAssemblyReference.cache
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Login.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Main_Menu.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Resources.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Room_Add.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Room_Update.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Schedule_Add.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Schedule_Update.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Student_Add.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Student_Update.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Teacher_Add.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Teacher_Update.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.vbproj.GenerateResource.Cache

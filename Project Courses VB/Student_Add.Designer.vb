@@ -23,7 +23,7 @@ Partial Class Student_Add
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Student_Add))
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnLstudent = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -36,15 +36,15 @@ Partial Class Student_Add
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button2
+        'btnLstudent
         '
-        Me.Button2.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.Button2.Location = New System.Drawing.Point(259, 294)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(120, 49)
-        Me.Button2.TabIndex = 30
-        Me.Button2.Text = "List Student"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnLstudent.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.btnLstudent.Location = New System.Drawing.Point(259, 294)
+        Me.btnLstudent.Name = "btnLstudent"
+        Me.btnLstudent.Size = New System.Drawing.Size(120, 49)
+        Me.btnLstudent.TabIndex = 30
+        Me.btnLstudent.Text = "List Student"
+        Me.btnLstudent.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -59,7 +59,7 @@ Partial Class Student_Add
         '
         'TextBox3
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.TextBox3.Location = New System.Drawing.Point(231, 225)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
@@ -69,17 +69,17 @@ Partial Class Student_Add
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(28, 231)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(111, 34)
+        Me.Label3.Size = New System.Drawing.Size(116, 31)
         Me.Label3.TabIndex = 27
         Me.Label3.Text = "Contact"
         '
         'TextBox1
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.TextBox1.Location = New System.Drawing.Point(231, 101)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
@@ -89,28 +89,28 @@ Partial Class Student_Add
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(28, 104)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(140, 34)
+        Me.Label1.Size = New System.Drawing.Size(146, 31)
         Me.Label1.TabIndex = 25
         Me.Label1.Text = "Full Name"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Lemon/Milk", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(70, 50)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(310, 38)
+        Me.Label4.Size = New System.Drawing.Size(249, 31)
         Me.Label4.TabIndex = 24
         Me.Label4.Text = "Add Student Form"
         '
         'TextBox2
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.TextBox2.Location = New System.Drawing.Point(231, 160)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
@@ -120,11 +120,11 @@ Partial Class Student_Add
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(28, 166)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(78, 34)
+        Me.Label2.Size = New System.Drawing.Size(88, 31)
         Me.Label2.TabIndex = 22
         Me.Label2.Text = "Class"
         '
@@ -146,7 +146,7 @@ Partial Class Student_Add
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(436, 385)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnLstudent)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label3)
@@ -164,7 +164,7 @@ Partial Class Student_Add
 
     End Sub
 
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnLstudent As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label3 As Label

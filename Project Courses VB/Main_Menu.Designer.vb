@@ -23,42 +23,42 @@ Partial Class Main_Menu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main_Menu))
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.frmClass = New System.Windows.Forms.PictureBox()
+        Me.frmSchedule = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.frmTeacher = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.frmStudent = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.frmClass, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.frmSchedule, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.frmTeacher, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.frmStudent, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox3
+        'frmClass
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(45, 233)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(136, 96)
-        Me.PictureBox3.TabIndex = 2
-        Me.PictureBox3.TabStop = False
+        Me.frmClass.BackColor = System.Drawing.Color.Transparent
+        Me.frmClass.BackgroundImage = CType(resources.GetObject("frmClass.BackgroundImage"), System.Drawing.Image)
+        Me.frmClass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.frmClass.Location = New System.Drawing.Point(45, 233)
+        Me.frmClass.Name = "frmClass"
+        Me.frmClass.Size = New System.Drawing.Size(136, 96)
+        Me.frmClass.TabIndex = 2
+        Me.frmClass.TabStop = False
         '
-        'PictureBox4
+        'frmSchedule
         '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox4.Location = New System.Drawing.Point(243, 233)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(136, 96)
-        Me.PictureBox4.TabIndex = 3
-        Me.PictureBox4.TabStop = False
+        Me.frmSchedule.BackColor = System.Drawing.Color.Transparent
+        Me.frmSchedule.BackgroundImage = CType(resources.GetObject("frmSchedule.BackgroundImage"), System.Drawing.Image)
+        Me.frmSchedule.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.frmSchedule.Location = New System.Drawing.Point(243, 233)
+        Me.frmSchedule.Name = "frmSchedule"
+        Me.frmSchedule.Size = New System.Drawing.Size(136, 96)
+        Me.frmSchedule.TabIndex = 3
+        Me.frmSchedule.TabStop = False
         '
         'Label1
         '
@@ -72,16 +72,16 @@ Partial Class Main_Menu
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Main Feature"
         '
-        'PictureBox2
+        'frmTeacher
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(243, 90)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(136, 96)
-        Me.PictureBox2.TabIndex = 5
-        Me.PictureBox2.TabStop = False
+        Me.frmTeacher.BackColor = System.Drawing.Color.Transparent
+        Me.frmTeacher.BackgroundImage = CType(resources.GetObject("frmTeacher.BackgroundImage"), System.Drawing.Image)
+        Me.frmTeacher.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.frmTeacher.Location = New System.Drawing.Point(243, 90)
+        Me.frmTeacher.Name = "frmTeacher"
+        Me.frmTeacher.Size = New System.Drawing.Size(136, 96)
+        Me.frmTeacher.TabIndex = 5
+        Me.frmTeacher.TabStop = False
         '
         'Label3
         '
@@ -119,16 +119,16 @@ Partial Class Main_Menu
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Schedule"
         '
-        'PictureBox1
+        'frmStudent
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(45, 90)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(136, 96)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.frmStudent.BackColor = System.Drawing.Color.Transparent
+        Me.frmStudent.BackgroundImage = CType(resources.GetObject("frmStudent.BackgroundImage"), System.Drawing.Image)
+        Me.frmStudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.frmStudent.Location = New System.Drawing.Point(45, 90)
+        Me.frmStudent.Name = "frmStudent"
+        Me.frmStudent.Size = New System.Drawing.Size(136, 96)
+        Me.frmStudent.TabIndex = 0
+        Me.frmStudent.TabStop = False
         '
         'Label2
         '
@@ -154,28 +154,28 @@ Partial Class Main_Menu
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.frmTeacher)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.frmSchedule)
+        Me.Controls.Add(Me.frmClass)
+        Me.Controls.Add(Me.frmStudent)
         Me.Name = "Main_Menu"
         Me.Text = "Main_Menu"
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.frmClass, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.frmSchedule, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.frmTeacher, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.frmStudent, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents frmClass As PictureBox
+    Friend WithEvents frmSchedule As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents frmTeacher As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents frmStudent As PictureBox
     Friend WithEvents Label2 As Label
 End Class
