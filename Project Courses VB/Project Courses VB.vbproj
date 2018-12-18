@@ -111,6 +111,18 @@
     <Compile Include="Room_Update.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Schedule_Add.Designer.vb">
+      <DependentUpon>Schedule_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule_Update.Designer.vb">
+      <DependentUpon>Schedule_Update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule_Update.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Student_Add.Designer.vb">
       <DependentUpon>Student_Add.vb</DependentUpon>
     </Compile>
@@ -155,11 +167,23 @@
     <EmbeddedResource Include="Room_Update.resx">
       <DependentUpon>Room_Update.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Schedule_Add.resx">
+      <DependentUpon>Schedule_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule_Update.resx">
+      <DependentUpon>Schedule_Update.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Student_Add.resx">
       <DependentUpon>Student_Add.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Student_Update.resx">
+      <DependentUpon>Student_Update.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Teacher_Add.resx">
       <DependentUpon>Teacher_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_Update.resx">
+      <DependentUpon>Teacher_Update.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -15,3 +15,7 @@ C:\Users\Acer\Desktop\Visual Studio Project\Project Courses VB\Project Courses V
 C:\Users\Acer\Desktop\Visual Studio Project\Project Courses VB\Project Courses VB\bin\Debug\Project Courses VB.xml
 C:\Users\Acer\Desktop\Visual Studio Project\Project Courses VB\Project Courses VB\obj\Debug\Project Courses VB.exe
 C:\Users\Acer\Desktop\Visual Studio Project\Project Courses VB\Project Courses VB\obj\Debug\Project Courses VB.pdb
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.exe.config
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.exe
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.xml
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.pdb

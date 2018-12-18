@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Teacher_Update
+Partial Class Schedule_Update
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,8 +22,16 @@ Partial Class Teacher_Update
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.SuspendLayout()
+        '
+        'Schedule_Update
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Text = "Teacher_Update"
+        Me.ClientSize = New System.Drawing.Size(426, 380)
+        Me.Name = "Schedule_Update"
+        Me.Text = "Schedule_Update"
+        Me.ResumeLayout(False)
+
     End Sub
 End Class
