@@ -197,9 +197,10 @@ Partial Class Schedule_Add
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(214, 345)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(214, 335)
+        Me.DateTimePicker1.MinimumSize = New System.Drawing.Size(185, 40)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(185, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(185, 40)
         Me.DateTimePicker1.TabIndex = 47
         '
         'Schedule_Add
