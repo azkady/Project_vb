@@ -24,7 +24,7 @@ Public Class Login
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        Me.Hide()
-        Main_Menu.Show()
+
+
     End Sub
 End Class
