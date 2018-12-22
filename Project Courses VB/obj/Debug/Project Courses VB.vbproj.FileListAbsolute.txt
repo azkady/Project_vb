@@ -43,3 +43,5 @@ C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\
 C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.exe
 C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.xml
 C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.pdb
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\bin\Debug\MySql.Data.dll
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\bin\Debug\MySql.Data.xml

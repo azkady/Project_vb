@@ -1,14 +1,21 @@
-﻿Public Class Room_Add
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) 
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) 
-
-    End Sub
-
+﻿Imports MySql.Data.MySqlClient
+Public Class Room_Add
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnLroom.Click
         Me.Hide()
         Room_Update.Show()
+    End Sub
+
+    Private Sub btnSaveroom_Click(sender As Object, e As EventArgs) Handles btnSaveroom.Click
+        Call koneksi()
+        Dim author As String
+        Try
+            Dim str As String
+            str = "insert into class values ('" & txtStudentClass.Text & "','" & txtRoomname.Text & "','" & author & "')"
+            cmd = New MySqlCommand(str, conn)
+            cmd.ExecuteNonQuery()
+            MessageBox.Show("Insert Data success")
+        Catch ex As Exception
+            MessageBox.Show("Insert Data Failed")
+        End Try
     End Sub
 End Class
