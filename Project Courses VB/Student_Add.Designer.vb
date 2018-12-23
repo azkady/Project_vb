@@ -23,28 +23,28 @@ Partial Class Student_Add
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Student_Add))
-        Me.btnLstudent = New System.Windows.Forms.Button()
+        Me.btnListStudent = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtContact = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnAddStudent = New System.Windows.Forms.Button()
+        Me.cbClass = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btnLstudent
+        'btnListStudent
         '
-        Me.btnLstudent.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnLstudent.Location = New System.Drawing.Point(259, 294)
-        Me.btnLstudent.Name = "btnLstudent"
-        Me.btnLstudent.Size = New System.Drawing.Size(120, 49)
-        Me.btnLstudent.TabIndex = 30
-        Me.btnLstudent.Text = "List Student"
-        Me.btnLstudent.UseVisualStyleBackColor = False
+        Me.btnListStudent.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.btnListStudent.Location = New System.Drawing.Point(259, 294)
+        Me.btnListStudent.Name = "btnListStudent"
+        Me.btnListStudent.Size = New System.Drawing.Size(120, 49)
+        Me.btnListStudent.TabIndex = 30
+        Me.btnListStudent.Text = "List Student"
+        Me.btnListStudent.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -57,14 +57,14 @@ Partial Class Student_Add
         Me.PictureBox1.TabIndex = 29
         Me.PictureBox1.TabStop = False
         '
-        'TextBox3
+        'txtContact
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox3.Location = New System.Drawing.Point(231, 225)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox3.TabIndex = 28
+        Me.txtContact.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.txtContact.Location = New System.Drawing.Point(231, 225)
+        Me.txtContact.Multiline = True
+        Me.txtContact.Name = "txtContact"
+        Me.txtContact.Size = New System.Drawing.Size(185, 40)
+        Me.txtContact.TabIndex = 28
         '
         'Label3
         '
@@ -77,14 +77,14 @@ Partial Class Student_Add
         Me.Label3.TabIndex = 27
         Me.Label3.Text = "Contact"
         '
-        'TextBox1
+        'txtName
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox1.Location = New System.Drawing.Point(231, 101)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox1.TabIndex = 26
+        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.txtName.Location = New System.Drawing.Point(231, 101)
+        Me.txtName.Multiline = True
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(185, 40)
+        Me.txtName.TabIndex = 26
         '
         'Label1
         '
@@ -108,15 +108,6 @@ Partial Class Student_Add
         Me.Label4.TabIndex = 24
         Me.Label4.Text = "Add Student Form"
         '
-        'TextBox2
-        '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox2.Location = New System.Drawing.Point(231, 160)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox2.TabIndex = 23
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -128,15 +119,23 @@ Partial Class Student_Add
         Me.Label2.TabIndex = 22
         Me.Label2.Text = "Class"
         '
-        'Button1
+        'btnAddStudent
         '
-        Me.Button1.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.Button1.Location = New System.Drawing.Point(77, 294)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(120, 49)
-        Me.Button1.TabIndex = 21
-        Me.Button1.Text = "Add Student"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnAddStudent.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.btnAddStudent.Location = New System.Drawing.Point(77, 294)
+        Me.btnAddStudent.Name = "btnAddStudent"
+        Me.btnAddStudent.Size = New System.Drawing.Size(120, 49)
+        Me.btnAddStudent.TabIndex = 21
+        Me.btnAddStudent.Text = "Add Student"
+        Me.btnAddStudent.UseVisualStyleBackColor = False
+        '
+        'cbClass
+        '
+        Me.cbClass.FormattingEnabled = True
+        Me.cbClass.Location = New System.Drawing.Point(231, 166)
+        Me.cbClass.Name = "cbClass"
+        Me.cbClass.Size = New System.Drawing.Size(185, 21)
+        Me.cbClass.TabIndex = 31
         '
         'Student_Add
         '
@@ -146,16 +145,16 @@ Partial Class Student_Add
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(436, 385)
-        Me.Controls.Add(Me.btnLstudent)
+        Me.Controls.Add(Me.cbClass)
+        Me.Controls.Add(Me.btnListStudent)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtContact)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnAddStudent)
         Me.Name = "Student_Add"
         Me.Text = "Student_Add"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -164,14 +163,14 @@ Partial Class Student_Add
 
     End Sub
 
-    Friend WithEvents btnLstudent As Button
+    Friend WithEvents btnListStudent As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtContact As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtName As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnAddStudent As Button
+    Friend WithEvents cbClass As ComboBox
 End Class
