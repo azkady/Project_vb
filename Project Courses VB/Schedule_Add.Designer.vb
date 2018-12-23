@@ -25,20 +25,20 @@ Partial Class Schedule_Add
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Schedule_Add))
         Me.btnLschedule = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.teacherId = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtClassname = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtRoomname = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.txtStart = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtEnd = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.datePicker = New System.Windows.Forms.DateTimePicker()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -63,14 +63,14 @@ Partial Class Schedule_Add
         Me.PictureBox1.TabIndex = 39
         Me.PictureBox1.TabStop = False
         '
-        'TextBox3
+        'teacherId
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox3.Location = New System.Drawing.Point(214, 192)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox3.TabIndex = 38
+        Me.teacherId.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.teacherId.Location = New System.Drawing.Point(214, 192)
+        Me.teacherId.Multiline = True
+        Me.teacherId.Name = "teacherId"
+        Me.teacherId.Size = New System.Drawing.Size(185, 40)
+        Me.teacherId.TabIndex = 38
         '
         'Label3
         '
@@ -83,14 +83,14 @@ Partial Class Schedule_Add
         Me.Label3.TabIndex = 37
         Me.Label3.Text = "Teacher ID"
         '
-        'TextBox1
+        'txtClassname
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox1.Location = New System.Drawing.Point(214, 100)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox1.TabIndex = 36
+        Me.txtClassname.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.txtClassname.Location = New System.Drawing.Point(214, 100)
+        Me.txtClassname.Multiline = True
+        Me.txtClassname.Name = "txtClassname"
+        Me.txtClassname.Size = New System.Drawing.Size(185, 40)
+        Me.txtClassname.TabIndex = 36
         '
         'Label1
         '
@@ -114,14 +114,14 @@ Partial Class Schedule_Add
         Me.Label4.TabIndex = 34
         Me.Label4.Text = "Add Schedule Form"
         '
-        'TextBox2
+        'txtRoomname
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox2.Location = New System.Drawing.Point(214, 146)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox2.TabIndex = 33
+        Me.txtRoomname.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.txtRoomname.Location = New System.Drawing.Point(214, 146)
+        Me.txtRoomname.Multiline = True
+        Me.txtRoomname.Name = "txtRoomname"
+        Me.txtRoomname.Size = New System.Drawing.Size(185, 40)
+        Me.txtRoomname.TabIndex = 33
         '
         'Label2
         '
@@ -134,24 +134,24 @@ Partial Class Schedule_Add
         Me.Label2.TabIndex = 32
         Me.Label2.Text = "Room Name"
         '
-        'Button1
+        'btnAdd
         '
-        Me.Button1.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.Button1.Location = New System.Drawing.Point(60, 393)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(120, 49)
-        Me.Button1.TabIndex = 31
-        Me.Button1.Text = "Add Schedule"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnAdd.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.btnAdd.Location = New System.Drawing.Point(60, 393)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(120, 49)
+        Me.btnAdd.TabIndex = 31
+        Me.btnAdd.Text = "Add Schedule"
+        Me.btnAdd.UseVisualStyleBackColor = False
         '
-        'TextBox4
+        'txtStart
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox4.Location = New System.Drawing.Point(214, 238)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox4.TabIndex = 42
+        Me.txtStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.txtStart.Location = New System.Drawing.Point(214, 238)
+        Me.txtStart.Multiline = True
+        Me.txtStart.Name = "txtStart"
+        Me.txtStart.Size = New System.Drawing.Size(185, 40)
+        Me.txtStart.TabIndex = 42
         '
         'Label5
         '
@@ -164,14 +164,14 @@ Partial Class Schedule_Add
         Me.Label5.TabIndex = 41
         Me.Label5.Text = "Start Time"
         '
-        'TextBox5
+        'txtEnd
         '
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox5.Location = New System.Drawing.Point(214, 284)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox5.TabIndex = 44
+        Me.txtEnd.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.txtEnd.Location = New System.Drawing.Point(214, 284)
+        Me.txtEnd.Multiline = True
+        Me.txtEnd.Name = "txtEnd"
+        Me.txtEnd.Size = New System.Drawing.Size(185, 40)
+        Me.txtEnd.TabIndex = 44
         '
         'Label6
         '
@@ -195,13 +195,13 @@ Partial Class Schedule_Add
         Me.Label7.TabIndex = 45
         Me.Label7.Text = "Date"
         '
-        'DateTimePicker1
+        'datePicker
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(214, 335)
-        Me.DateTimePicker1.MinimumSize = New System.Drawing.Size(185, 40)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(185, 40)
-        Me.DateTimePicker1.TabIndex = 47
+        Me.datePicker.Location = New System.Drawing.Point(214, 335)
+        Me.datePicker.MinimumSize = New System.Drawing.Size(185, 40)
+        Me.datePicker.Name = "datePicker"
+        Me.datePicker.Size = New System.Drawing.Size(185, 40)
+        Me.datePicker.TabIndex = 47
         '
         'Schedule_Add
         '
@@ -211,22 +211,22 @@ Partial Class Schedule_Add
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(429, 473)
-        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.datePicker)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.txtEnd)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txtStart)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnLschedule)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.teacherId)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtClassname)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtRoomname)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnAdd)
         Me.Name = "Schedule_Add"
         Me.Text = "Schedule_Add"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -237,18 +237,18 @@ Partial Class Schedule_Add
 
     Friend WithEvents btnLschedule As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents teacherId As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtClassname As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtRoomname As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents btnAdd As Button
+    Friend WithEvents txtStart As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtEnd As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents datePicker As DateTimePicker
 End Class
