@@ -1,4 +1,4 @@
-﻿Imports Project_Courses_VB.koneksi
+﻿Imports Project_Courses_VB.ConnectionDB
 Imports MySql.Data.MySqlClient
 Public Class Student_Add
     Dim conn As New MySqlConnection("Server=localhost; user=root; database=courses_project")
@@ -34,10 +34,10 @@ Public Class Student_Add
         Dim str As String
         str = "select Student_Class from class"
         cmd = New MySqlCommand(str, conn)
-        MySQLReader = cmd.ExecuteReader
-        If MySQLReader.HasRows Then
-            Do While MySQLReader.Read
-                cbClass.Items.Add(MySQLReader("Student_Class"))
+        rd = cmd.ExecuteReader
+        If rd.HasRows Then
+            Do While rd.Read
+                cbClass.Items.Add(rd("Student_Class"))
             Loop
         Else
         End If

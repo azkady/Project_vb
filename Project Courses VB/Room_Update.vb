@@ -9,6 +9,10 @@ Public Class Room_Update
         txtIdclass.Text = tableRoom.Rows(e.RowIndex).Cells(0).Value
         txtStudentclass.Text = tableRoom.Rows(e.RowIndex).Cells(1).Value
         txtRoomname.Text = tableRoom.Rows(e.RowIndex).Cells(2).Value
+
+
+        txtStudentclass.Focus()
+
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
@@ -57,5 +61,13 @@ Public Class Room_Update
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Hide()
         Main_Menu.Show()
+    End Sub
+
+    Private Sub tableRoom_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles tableRoom.CellContentClick
+
+    End Sub
+
+    Private Sub txtRoomname_TextChanged(sender As Object, e As EventArgs) Handles txtRoomname.TextChanged
+
     End Sub
 End Class

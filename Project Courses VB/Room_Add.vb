@@ -1,5 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Room_Add
+
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnLroom.Click
         Me.Hide()
         Room_Update.Show()
@@ -10,7 +12,7 @@ Public Class Room_Add
         Dim author As String
         Try
             Dim str As String
-            str = "insert into class values ('" & txtStudentClass.Text & "','" & txtRoomname.Text & "','" & author & "')"
+            str = "insert into class (ID_Class, Student_Class, Class_Name) values ( '" & "', '" & txtStudentClass.Text & "','" & txtRoomname.Text & "')"
             cmd = New MySqlCommand(str, conn)
             cmd.ExecuteNonQuery()
             MessageBox.Show("Insert Data success")

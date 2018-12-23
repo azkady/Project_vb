@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9A1BB2DC-CE99-4704-9E8B-71564C997234}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Project_Courses_VB.My.MyApplication</StartupObject>
-    <RootNamespace>Project_Courses_VB</RootNamespace>
+    <StartupObject>ProjectCoursesVB.My.MyApplication</StartupObject>
+    <RootNamespace>ProjectCoursesVB</RootNamespace>
     <AssemblyName>Project Courses VB</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
@@ -76,10 +76,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-
-
     <Compile Include="ConnectionDB.vb" />
-
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>

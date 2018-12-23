@@ -2,7 +2,8 @@
 Public Class Schedule_Add
     Private Sub btnLstudent_Click(sender As Object, e As EventArgs) Handles btnLschedule.Click
         Me.Hide()
-        Schedule_Update.Show()
+        tableSchedule.Show()
+
     End Sub
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Call koneksi()

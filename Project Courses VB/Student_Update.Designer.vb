@@ -33,7 +33,7 @@ Partial Class Student_Update
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.txtClass = New System.Windows.Forms.TextBox()
@@ -65,7 +65,6 @@ Partial Class Student_Update
         '
         'TextBox5
         '
-        Me.TextBox5.Enabled = False
         Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.TextBox5.Location = New System.Drawing.Point(12, 87)
         Me.TextBox5.Multiline = True
@@ -144,14 +143,14 @@ Partial Class Student_Update
         Me.Label1.TabIndex = 50
         Me.Label1.Text = "ID Student"
         '
-        'Button2
+        'btnDelete
         '
-        Me.Button2.Location = New System.Drawing.Point(579, 272)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(96, 43)
-        Me.Button2.TabIndex = 65
-        Me.Button2.Text = "Update Data"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnDelete.Location = New System.Drawing.Point(579, 272)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(96, 43)
+        Me.btnDelete.TabIndex = 65
+        Me.btnDelete.Text = "Delete "
+        Me.btnDelete.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -216,7 +215,7 @@ Partial Class Student_Update
         Me.Controls.Add(Me.txtClass)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.TextBox5)
@@ -245,7 +244,7 @@ Partial Class Student_Update
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnDelete As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents txtName As TextBox
     Friend WithEvents txtClass As TextBox

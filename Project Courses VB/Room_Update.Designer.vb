@@ -81,7 +81,7 @@ Partial Class Room_Update
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
         '
-        'tnDelete
+        'btnDelete
         '
         Me.tnDelete.Location = New System.Drawing.Point(579, 233)
         Me.tnDelete.Name = "tnDelete"

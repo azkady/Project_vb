@@ -66,3 +66,33 @@ C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\
 C:\Users\Azka\Downloads\Project_vb\Project Courses VB\bin\Debug\MySql.Data.dll
 C:\Users\Azka\Downloads\Project_vb\Project Courses VB\bin\Debug\MySql.Data.xml
 >>>>>>> af31d5ca91256ddb7b073c469d3f5335602cad7f
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.tableSchedule.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\Project_Vb.exe.config
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\Project_Vb.exe
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\Project_Vb.pdb
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\Project_Vb.xml
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Login.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Main_Menu.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Resources.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Room_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Room_Update.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Schedule_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.tableSchedule.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Student_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Student_Update.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Teacher_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Teacher_Update.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.exe
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.xml
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.pdb
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Login.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Main_Menu.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Resources.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Room_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Room_Update.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Schedule_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.tableSchedule.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Student_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Student_Update.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Teacher_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Teacher_Update.resources

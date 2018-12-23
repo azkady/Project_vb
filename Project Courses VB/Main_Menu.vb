@@ -29,5 +29,6 @@
     Private Sub frmTeacher_Click(sender As Object, e As EventArgs) Handles frmTeacher.Click
         Me.Hide()
         Teacher_Add.Show()
+
     End Sub
 End Class

@@ -8,7 +8,7 @@ Module ConnectionDB
     Public str As String
     Sub koneksi()
         Try
-            Dim str As String = "datasource=localhost;port=3306;username=root;password=;database=courses_project"
+            Dim str As String = "datasource=localhost;username=root;password=;database=courses_project"
             conn = New MySqlConnection(str)
             If conn.State = ConnectionState.Closed Then
                 conn.Open()
