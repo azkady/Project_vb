@@ -32,6 +32,7 @@ Partial Class Main_Menu
         Me.Label5 = New System.Windows.Forms.Label()
         Me.frmStudent = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         CType(Me.frmClass, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.frmSchedule, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.frmTeacher, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -142,6 +143,15 @@ Partial Class Main_Menu
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Student"
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(351, 19)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(39, 13)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Label6"
+        '
         'Main_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -150,6 +160,7 @@ Partial Class Main_Menu
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(421, 406)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -178,4 +189,5 @@ Partial Class Main_Menu
     Friend WithEvents Label5 As Label
     Friend WithEvents frmStudent As PictureBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents Label6 As Label
 End Class

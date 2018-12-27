@@ -33,6 +33,7 @@ Partial Class Student_Add
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnAddStudent = New System.Windows.Forms.Button()
         Me.cbClass = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -131,11 +132,22 @@ Partial Class Student_Add
         '
         'cbClass
         '
+        Me.cbClass.Enabled = False
         Me.cbClass.FormattingEnabled = True
         Me.cbClass.Location = New System.Drawing.Point(231, 166)
         Me.cbClass.Name = "cbClass"
         Me.cbClass.Size = New System.Drawing.Size(185, 21)
         Me.cbClass.TabIndex = 31
+        Me.cbClass.Text = "Select Class"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(359, 18)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(39, 13)
+        Me.Label5.TabIndex = 33
+        Me.Label5.Text = "Label5"
         '
         'Student_Add
         '
@@ -144,7 +156,8 @@ Partial Class Student_Add
         Me.BackColor = System.Drawing.Color.MediumTurquoise
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(436, 385)
+        Me.ClientSize = New System.Drawing.Size(436, 358)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.cbClass)
         Me.Controls.Add(Me.btnListStudent)
         Me.Controls.Add(Me.PictureBox1)
@@ -173,4 +186,5 @@ Partial Class Student_Add
     Friend WithEvents Label2 As Label
     Friend WithEvents btnAddStudent As Button
     Friend WithEvents cbClass As ComboBox
+    Friend WithEvents Label5 As Label
 End Class

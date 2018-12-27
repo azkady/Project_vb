@@ -24,8 +24,7 @@ Partial Class Student_Update
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Student_Update))
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.txtID = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -34,11 +33,13 @@ Partial Class Student_Update
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnDelete = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.txtName = New System.Windows.Forms.TextBox()
-        Me.txtClass = New System.Windows.Forms.TextBox()
         Me.txtContact = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.cbClass = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         CType(Me.DataGridStudent, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -54,23 +55,14 @@ Partial Class Student_Update
         Me.Label5.TabIndex = 64
         Me.Label5.Text = "UPDATE STUDENT FORM"
         '
-        'Button4
+        'txtSearch
         '
-        Me.Button4.Location = New System.Drawing.Point(336, 87)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(91, 32)
-        Me.Button4.TabIndex = 63
-        Me.Button4.Text = "Search"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox5.Location = New System.Drawing.Point(12, 87)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(309, 32)
-        Me.TextBox5.TabIndex = 62
+        Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.txtSearch.Location = New System.Drawing.Point(118, 87)
+        Me.txtSearch.Multiline = True
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(309, 32)
+        Me.txtSearch.TabIndex = 62
         '
         'txtID
         '
@@ -152,14 +144,14 @@ Partial Class Student_Update
         Me.btnDelete.Text = "Delete "
         Me.btnDelete.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnBack
         '
-        Me.Button3.Location = New System.Drawing.Point(708, 272)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(96, 43)
-        Me.Button3.TabIndex = 66
-        Me.Button3.Text = "Update Data"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnBack.Location = New System.Drawing.Point(708, 272)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(96, 43)
+        Me.btnBack.TabIndex = 66
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
         '
         'txtName
         '
@@ -170,16 +162,6 @@ Partial Class Student_Update
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(185, 35)
         Me.txtName.TabIndex = 67
-        '
-        'txtClass
-        '
-        Me.txtClass.Enabled = False
-        Me.txtClass.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtClass.Location = New System.Drawing.Point(619, 177)
-        Me.txtClass.Multiline = True
-        Me.txtClass.Name = "txtClass"
-        Me.txtClass.Size = New System.Drawing.Size(185, 35)
-        Me.txtClass.TabIndex = 68
         '
         'txtContact
         '
@@ -202,6 +184,36 @@ Partial Class Student_Update
         Me.PictureBox1.TabIndex = 86
         Me.PictureBox1.TabStop = False
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(12, 87)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(95, 29)
+        Me.Label6.TabIndex = 87
+        Me.Label6.Text = "Search"
+        '
+        'cbClass
+        '
+        Me.cbClass.Enabled = False
+        Me.cbClass.FormattingEnabled = True
+        Me.cbClass.Location = New System.Drawing.Point(619, 185)
+        Me.cbClass.Name = "cbClass"
+        Me.cbClass.Size = New System.Drawing.Size(185, 21)
+        Me.cbClass.TabIndex = 88
+        Me.cbClass.Text = "Select Class"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(26, 22)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(39, 13)
+        Me.Label7.TabIndex = 89
+        Me.Label7.Text = "Label7"
+        '
         'Student_Update
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -210,15 +222,16 @@ Partial Class Student_Update
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(833, 457)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.cbClass)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtContact)
-        Me.Controls.Add(Me.txtClass)
         Me.Controls.Add(Me.txtName)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.txtID)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -235,8 +248,7 @@ Partial Class Student_Update
 
     End Sub
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button4 As Button
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtSearch As TextBox
     Friend WithEvents txtID As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
@@ -245,9 +257,11 @@ Partial Class Student_Update
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents btnDelete As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnBack As Button
     Friend WithEvents txtName As TextBox
-    Friend WithEvents txtClass As TextBox
     Friend WithEvents txtContact As TextBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents cbClass As ComboBox
+    Friend WithEvents Label7 As Label
 End Class

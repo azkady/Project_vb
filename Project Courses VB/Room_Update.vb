@@ -1,18 +1,35 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.Data.Odbc
 Public Class Room_Update
+    Dim conn As New MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=courses_project")
+    Dim cmd As New MySqlCommand
+    Dim data As New MySqlDataAdapter
+    Dim ds As New DataSet
     Private Sub Room_Update_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call refreshTable()
+        Call comboboxClass()
+        Label4.Text = ConnectionDB.session
+    End Sub
+    Sub comboboxClass()
+        conn.Open()
+        Dim str As String
+        str = "select Student_Class from class"
+        cmd = New MySqlCommand(str, conn)
+        rd = cmd.ExecuteReader
+        If rd.HasRows Then
+            Do While rd.Read
+                cbClass1.Items.Add(rd("Student_Class"))
+            Loop
+        Else
+        End If
+        conn.Close()
     End Sub
 
     Private Sub tableRoom_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles tableRoom.CellMouseClick
         txtIdclass.Text = tableRoom.Rows(e.RowIndex).Cells(0).Value
-        txtStudentclass.Text = tableRoom.Rows(e.RowIndex).Cells(1).Value
+        cbClass1.Text = tableRoom.Rows(e.RowIndex).Cells(1).Value
         txtRoomname.Text = tableRoom.Rows(e.RowIndex).Cells(2).Value
-
-
-        txtStudentclass.Focus()
-
+        txtSearch.Text = ("")
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
@@ -25,6 +42,7 @@ Public Class Room_Update
     End Sub
 
     Sub deleteRoom()
+        conn.Open()
         Try
             Call koneksi()
             Dim str As String
@@ -33,22 +51,24 @@ Public Class Room_Update
             cmd.ExecuteNonQuery()
             MessageBox.Show("Delete Success")
         Catch ex As Exception
-            MessageBox.Show("Delete Failed")
+            MsgBox("Update Class Failed " + ex.Message, MsgBoxStyle.Critical)
         End Try
+        conn.Close()
     End Sub
 
     Sub updateRoom()
-        Dim author As String
+        conn.Open()
         Try
             Call koneksi()
             Dim str As String
-            str = "Update class set Student_Class = '" & txtStudentclass.Text & "', Class_Name = '" & txtRoomname.Text & "', Author = '" & author & "' where ID_Class = '" & txtIdclass.Text & "'"
+            str = "Update class set Student_Class = '" & cbClass1.Text & "', Class_Name = '" & txtRoomname.Text & "', Author = '" & Label4.Text & "' where ID_Class = '" & txtIdclass.Text & "'"
             cmd = New MySqlCommand(str, conn)
             cmd.ExecuteNonQuery()
             MessageBox.Show("Update Class Success")
         Catch ex As Exception
-            MessageBox.Show("Update Class Failed")
+            MsgBox("Update Class Failed " + ex.Message, MsgBoxStyle.Critical)
         End Try
+        conn.Close()
     End Sub
     Sub refreshTable()
         Call koneksi()
@@ -62,12 +82,14 @@ Public Class Room_Update
         Me.Hide()
         Main_Menu.Show()
     End Sub
-
-    Private Sub tableRoom_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles tableRoom.CellContentClick
-
+    Sub searchdata()
+        Call koneksi()
+        Dim Table As New DataTable()
+        da = New MySqlDataAdapter("SELECT * FROM class WHERE ID_Class like '%" & txtSearch.Text & "%' or Student_Class like '%" & txtSearch.Text & "%' or  Class_Name like '%" & txtSearch.Text & "%'", conn)
+        da.Fill(Table)
+        tableRoom.DataSource = Table
     End Sub
-
-    Private Sub txtRoomname_TextChanged(sender As Object, e As EventArgs) Handles txtRoomname.TextChanged
-
+    Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
+        searchdata()
     End Sub
 End Class

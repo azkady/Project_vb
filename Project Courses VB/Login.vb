@@ -11,6 +11,7 @@ Public Class Login
     Dim conn As New MySqlConnection("Server=localhost; user=root; database=courses_project")
     Dim perintah As New MySqlCommand
     Dim data As New MySqlDataAdapter
+    Dim Reader As MySqlDataReader
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
@@ -39,13 +40,15 @@ Public Class Login
         cmd = New MySqlCommand(str, conn)
         rd = cmd.ExecuteReader
 
-        If rd.HasRows = 0 Then
-            MsgBox("Username & Password incorrect",
-            MsgBoxStyle.Exclamation, "Error Login")
-        Else
-            MsgBox("Successfull Login, Welcome " & txtUsername.Text & "!", MsgBoxStyle.Information, "Successfull Login")
+        If rd.Read Then
+            ConnectionDB.session = rd("Username")
+            MsgBox("Successfull Login, Welcome " & rd("Username") & "!", MsgBoxStyle.Information, "Successfull Login")
             Main_Menu.Show()
             Me.Hide()
+
+        Else
+            MsgBox("Username & Password incorrect",
+            MsgBoxStyle.Exclamation, "Error Login")
         End If
         conn.Close()
     End Sub

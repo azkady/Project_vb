@@ -24,13 +24,14 @@ Partial Class Room_Add
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Room_Add))
         Me.btnSaveroom = New System.Windows.Forms.Button()
-        Me.txtStudentClass = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtRoomname = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnLroom = New System.Windows.Forms.Button()
+        Me.cbClass = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -43,15 +44,6 @@ Partial Class Room_Add
         Me.btnSaveroom.TabIndex = 1
         Me.btnSaveroom.Text = "Add Room"
         Me.btnSaveroom.UseVisualStyleBackColor = False
-        '
-        'txtStudentClass
-        '
-        Me.txtStudentClass.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtStudentClass.Location = New System.Drawing.Point(228, 166)
-        Me.txtStudentClass.Multiline = True
-        Me.txtStudentClass.Name = "txtStudentClass"
-        Me.txtStudentClass.Size = New System.Drawing.Size(185, 40)
-        Me.txtStudentClass.TabIndex = 4
         '
         'Label2
         '
@@ -78,10 +70,10 @@ Partial Class Room_Add
         'txtRoomname
         '
         Me.txtRoomname.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtRoomname.Location = New System.Drawing.Point(228, 107)
+        Me.txtRoomname.Location = New System.Drawing.Point(244, 107)
         Me.txtRoomname.Multiline = True
         Me.txtRoomname.Name = "txtRoomname"
-        Me.txtRoomname.Size = New System.Drawing.Size(185, 40)
+        Me.txtRoomname.Size = New System.Drawing.Size(169, 40)
         Me.txtRoomname.TabIndex = 10
         '
         'Label1
@@ -116,6 +108,25 @@ Partial Class Room_Add
         Me.btnLroom.Text = "Room List"
         Me.btnLroom.UseVisualStyleBackColor = False
         '
+        'cbClass
+        '
+        Me.cbClass.Enabled = False
+        Me.cbClass.FormattingEnabled = True
+        Me.cbClass.Location = New System.Drawing.Point(244, 182)
+        Me.cbClass.Name = "cbClass"
+        Me.cbClass.Size = New System.Drawing.Size(169, 21)
+        Me.cbClass.TabIndex = 22
+        Me.cbClass.Text = "Select Class"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(12, 21)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.TabIndex = 23
+        Me.Label3.Text = "Label3"
+        '
         'Room_Add
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -124,12 +135,13 @@ Partial Class Room_Add
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(433, 310)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.cbClass)
         Me.Controls.Add(Me.btnLroom)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtRoomname)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.txtStudentClass)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnSaveroom)
         Me.Name = "Room_Add"
@@ -140,11 +152,12 @@ Partial Class Room_Add
 
     End Sub
     Friend WithEvents btnSaveroom As Button
-    Friend WithEvents txtStudentClass As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents txtRoomname As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnLroom As Button
+    Friend WithEvents cbClass As ComboBox
+    Friend WithEvents Label3 As Label
 End Class

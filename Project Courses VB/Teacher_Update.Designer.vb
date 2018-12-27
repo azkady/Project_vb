@@ -29,7 +29,6 @@ Partial Class Teacher_Update
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -39,6 +38,7 @@ Partial Class Teacher_Update
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -46,7 +46,7 @@ Partial Class Teacher_Update
         'TextBox3
         '
         Me.TextBox3.Enabled = False
-        Me.TextBox3.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.TextBox3.Location = New System.Drawing.Point(619, 221)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
@@ -56,7 +56,7 @@ Partial Class Teacher_Update
         'TextBox2
         '
         Me.TextBox2.Enabled = False
-        Me.TextBox2.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.TextBox2.Location = New System.Drawing.Point(619, 176)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
@@ -66,7 +66,7 @@ Partial Class Teacher_Update
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.TextBox1.Location = New System.Drawing.Point(619, 130)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
@@ -94,28 +94,19 @@ Partial Class Teacher_Update
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("MOON GET!", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(201, 11)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(455, 51)
+        Me.Label5.Size = New System.Drawing.Size(391, 33)
         Me.Label5.TabIndex = 79
         Me.Label5.Text = "UPDATE TEACHER FORM"
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(336, 86)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(91, 32)
-        Me.Button4.TabIndex = 78
-        Me.Button4.Text = "Search"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'TextBox5
         '
         Me.TextBox5.Enabled = False
-        Me.TextBox5.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox5.Location = New System.Drawing.Point(12, 86)
+        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.TextBox5.Location = New System.Drawing.Point(118, 89)
         Me.TextBox5.Multiline = True
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(309, 32)
@@ -124,7 +115,7 @@ Partial Class Teacher_Update
         'TextBox4
         '
         Me.TextBox4.Enabled = False
-        Me.TextBox4.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.TextBox4.Location = New System.Drawing.Point(619, 86)
         Me.TextBox4.Multiline = True
         Me.TextBox4.Name = "TextBox4"
@@ -134,22 +125,22 @@ Partial Class Teacher_Update
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Adobe Gothic Std B", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold)
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(448, 221)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(98, 30)
+        Me.Label4.Size = New System.Drawing.Size(101, 29)
         Me.Label4.TabIndex = 75
         Me.Label4.Text = "Contact"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Adobe Gothic Std B", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold)
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(448, 176)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(142, 30)
+        Me.Label3.Size = New System.Drawing.Size(155, 29)
         Me.Label3.TabIndex = 74
         Me.Label3.Text = "Lesson Skill"
         '
@@ -173,22 +164,22 @@ Partial Class Teacher_Update
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Adobe Gothic Std B", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold)
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(448, 130)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(124, 30)
+        Me.Label2.Size = New System.Drawing.Size(133, 29)
         Me.Label2.TabIndex = 71
         Me.Label2.Text = "Full Name"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Adobe Gothic Std B", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(448, 86)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(129, 30)
+        Me.Label1.Size = New System.Drawing.Size(142, 29)
         Me.Label1.TabIndex = 70
         Me.Label1.Text = "ID Teacher"
         '
@@ -203,6 +194,17 @@ Partial Class Teacher_Update
         Me.PictureBox1.TabIndex = 85
         Me.PictureBox1.TabStop = False
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(12, 92)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(95, 29)
+        Me.Label6.TabIndex = 86
+        Me.Label6.Text = "Search"
+        '
         'Teacher_Update
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -211,6 +213,7 @@ Partial Class Teacher_Update
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(823, 453)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
@@ -218,7 +221,6 @@ Partial Class Teacher_Update
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label4)
@@ -242,7 +244,6 @@ Partial Class Teacher_Update
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button4 As Button
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label4 As Label
@@ -252,4 +253,5 @@ Partial Class Teacher_Update
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label6 As Label
 End Class

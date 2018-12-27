@@ -6,6 +6,7 @@ Module ConnectionDB
     Public da As MySqlDataAdapter
     Public ds As DataSet
     Public str As String
+    Public session As String
     Sub koneksi()
         Try
             Dim str As String = "datasource=localhost;username=root;password=;database=courses_project"

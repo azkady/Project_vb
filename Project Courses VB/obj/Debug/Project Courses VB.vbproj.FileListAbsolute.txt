@@ -96,3 +96,14 @@ C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\
 C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Student_Update.resources
 C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Teacher_Add.resources
 C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Teacher_Update.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Login.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Main_Menu.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Resources.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Room_Add.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Room_Update.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Schedule_Add.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.tableSchedule.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Student_Add.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Student_Update.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Teacher_Add.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Teacher_Update.resources

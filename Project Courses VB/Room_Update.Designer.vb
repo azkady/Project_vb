@@ -23,13 +23,11 @@ Partial Class Room_Update
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Room_Update))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.cbClass = New System.Windows.Forms.PictureBox()
         Me.txtRoomname = New System.Windows.Forms.TextBox()
-        Me.txtStudentclass = New System.Windows.Forms.TextBox()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.tnDelete = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.txtIdclass = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -37,40 +35,32 @@ Partial Class Room_Update
         Me.btnUpdate = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cbClass1 = New System.Windows.Forms.ComboBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        CType(Me.cbClass, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tableRoom, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'cbClass
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(565, 314)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(154, 103)
-        Me.PictureBox1.TabIndex = 102
-        Me.PictureBox1.TabStop = False
+        Me.cbClass.BackColor = System.Drawing.Color.Transparent
+        Me.cbClass.BackgroundImage = CType(resources.GetObject("cbClass.BackgroundImage"), System.Drawing.Image)
+        Me.cbClass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.cbClass.Location = New System.Drawing.Point(565, 314)
+        Me.cbClass.Name = "cbClass"
+        Me.cbClass.Size = New System.Drawing.Size(154, 103)
+        Me.cbClass.TabIndex = 102
+        Me.cbClass.TabStop = False
         '
         'txtRoomname
         '
-        Me.txtRoomname.Enabled = False
         Me.txtRoomname.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtRoomname.Location = New System.Drawing.Point(619, 172)
+        Me.txtRoomname.Location = New System.Drawing.Point(636, 172)
         Me.txtRoomname.Multiline = True
         Me.txtRoomname.Name = "txtRoomname"
         Me.txtRoomname.Size = New System.Drawing.Size(185, 35)
         Me.txtRoomname.TabIndex = 100
-        '
-        'txtStudentclass
-        '
-        Me.txtStudentclass.Enabled = False
-        Me.txtStudentclass.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtStudentclass.Location = New System.Drawing.Point(619, 126)
-        Me.txtStudentclass.Multiline = True
-        Me.txtStudentclass.Name = "txtStudentclass"
-        Me.txtStudentclass.Size = New System.Drawing.Size(185, 35)
-        Me.txtStudentclass.TabIndex = 99
         '
         'btnBack
         '
@@ -81,7 +71,7 @@ Partial Class Room_Update
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
         '
-        'btnDelete
+        'tnDelete
         '
         Me.tnDelete.Location = New System.Drawing.Point(579, 233)
         Me.tnDelete.Name = "tnDelete"
@@ -101,20 +91,10 @@ Partial Class Room_Update
         Me.Label5.TabIndex = 96
         Me.Label5.Text = "UPDATE ROOM FORM"
         '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(336, 82)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(91, 32)
-        Me.Button4.TabIndex = 95
-        Me.Button4.Text = "Search"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
         'txtSearch
         '
-        Me.txtSearch.Enabled = False
         Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtSearch.Location = New System.Drawing.Point(12, 82)
+        Me.txtSearch.Location = New System.Drawing.Point(118, 82)
         Me.txtSearch.Multiline = True
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.Size = New System.Drawing.Size(309, 32)
@@ -124,10 +104,9 @@ Partial Class Room_Update
         '
         Me.txtIdclass.Enabled = False
         Me.txtIdclass.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtIdclass.Location = New System.Drawing.Point(619, 82)
-        Me.txtIdclass.Multiline = True
+        Me.txtIdclass.Location = New System.Drawing.Point(636, 82)
         Me.txtIdclass.Name = "txtIdclass"
-        Me.txtIdclass.Size = New System.Drawing.Size(185, 35)
+        Me.txtIdclass.Size = New System.Drawing.Size(185, 38)
         Me.txtIdclass.TabIndex = 93
         '
         'Label3
@@ -180,6 +159,36 @@ Partial Class Room_Update
         Me.Label1.TabIndex = 87
         Me.Label1.Text = "ID Class"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(35, 52)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(39, 13)
+        Me.Label4.TabIndex = 103
+        Me.Label4.Text = "Label4"
+        '
+        'cbClass1
+        '
+        Me.cbClass1.Enabled = False
+        Me.cbClass1.FormattingEnabled = True
+        Me.cbClass1.Location = New System.Drawing.Point(636, 135)
+        Me.cbClass1.Name = "cbClass1"
+        Me.cbClass1.Size = New System.Drawing.Size(187, 21)
+        Me.cbClass1.TabIndex = 104
+        Me.cbClass1.Text = "Select Class"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(12, 85)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(95, 29)
+        Me.Label6.TabIndex = 105
+        Me.Label6.Text = "Search"
+        '
         'Room_Update
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -187,14 +196,15 @@ Partial Class Room_Update
         Me.BackColor = System.Drawing.Color.DarkOrchid
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(818, 448)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.ClientSize = New System.Drawing.Size(833, 448)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.cbClass1)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.cbClass)
         Me.Controls.Add(Me.txtRoomname)
-        Me.Controls.Add(Me.txtStudentclass)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.tnDelete)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.txtIdclass)
         Me.Controls.Add(Me.Label3)
@@ -204,20 +214,18 @@ Partial Class Room_Update
         Me.Controls.Add(Me.Label1)
         Me.Name = "Room_Update"
         Me.Text = "Room_Update"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cbClass, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tableRoom, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents cbClass As PictureBox
     Friend WithEvents txtRoomname As TextBox
-    Friend WithEvents txtStudentclass As TextBox
     Friend WithEvents btnBack As Button
     Friend WithEvents tnDelete As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button4 As Button
     Friend WithEvents txtSearch As TextBox
     Friend WithEvents txtIdclass As TextBox
     Friend WithEvents Label3 As Label
@@ -225,4 +233,7 @@ Partial Class Room_Update
     Friend WithEvents btnUpdate As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents cbClass1 As ComboBox
+    Friend WithEvents Label6 As Label
 End Class
