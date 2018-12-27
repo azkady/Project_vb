@@ -110,7 +110,6 @@ Partial Class Room_Add
         '
         'cbClass
         '
-        Me.cbClass.Enabled = False
         Me.cbClass.FormattingEnabled = True
         Me.cbClass.Location = New System.Drawing.Point(244, 182)
         Me.cbClass.Name = "cbClass"

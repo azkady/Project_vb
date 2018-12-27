@@ -25,12 +25,9 @@ Partial Class Schedule_Add
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Schedule_Add))
         Me.btnLschedule = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.teacherId = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtClassname = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtRoomname = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.txtStart = New System.Windows.Forms.TextBox()
@@ -39,6 +36,10 @@ Partial Class Schedule_Add
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.datePicker = New System.Windows.Forms.DateTimePicker()
+        Me.cbClass = New System.Windows.Forms.ComboBox()
+        Me.cbRoom = New System.Windows.Forms.ComboBox()
+        Me.cbTeacher = New System.Windows.Forms.ComboBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -63,15 +64,6 @@ Partial Class Schedule_Add
         Me.PictureBox1.TabIndex = 39
         Me.PictureBox1.TabStop = False
         '
-        'teacherId
-        '
-        Me.teacherId.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.teacherId.Location = New System.Drawing.Point(214, 192)
-        Me.teacherId.Multiline = True
-        Me.teacherId.Name = "teacherId"
-        Me.teacherId.Size = New System.Drawing.Size(185, 40)
-        Me.teacherId.TabIndex = 38
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -82,15 +74,6 @@ Partial Class Schedule_Add
         Me.Label3.Size = New System.Drawing.Size(159, 31)
         Me.Label3.TabIndex = 37
         Me.Label3.Text = "Teacher ID"
-        '
-        'txtClassname
-        '
-        Me.txtClassname.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtClassname.Location = New System.Drawing.Point(214, 100)
-        Me.txtClassname.Multiline = True
-        Me.txtClassname.Name = "txtClassname"
-        Me.txtClassname.Size = New System.Drawing.Size(185, 40)
-        Me.txtClassname.TabIndex = 36
         '
         'Label1
         '
@@ -113,15 +96,6 @@ Partial Class Schedule_Add
         Me.Label4.Size = New System.Drawing.Size(269, 31)
         Me.Label4.TabIndex = 34
         Me.Label4.Text = "Add Schedule Form"
-        '
-        'txtRoomname
-        '
-        Me.txtRoomname.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtRoomname.Location = New System.Drawing.Point(214, 146)
-        Me.txtRoomname.Multiline = True
-        Me.txtRoomname.Name = "txtRoomname"
-        Me.txtRoomname.Size = New System.Drawing.Size(185, 40)
-        Me.txtRoomname.TabIndex = 33
         '
         'Label2
         '
@@ -203,6 +177,42 @@ Partial Class Schedule_Add
         Me.datePicker.Size = New System.Drawing.Size(185, 40)
         Me.datePicker.TabIndex = 47
         '
+        'cbClass
+        '
+        Me.cbClass.FormattingEnabled = True
+        Me.cbClass.Location = New System.Drawing.Point(214, 103)
+        Me.cbClass.Name = "cbClass"
+        Me.cbClass.Size = New System.Drawing.Size(185, 21)
+        Me.cbClass.TabIndex = 48
+        Me.cbClass.Text = "Select Class"
+        '
+        'cbRoom
+        '
+        Me.cbRoom.FormattingEnabled = True
+        Me.cbRoom.Location = New System.Drawing.Point(214, 152)
+        Me.cbRoom.Name = "cbRoom"
+        Me.cbRoom.Size = New System.Drawing.Size(185, 21)
+        Me.cbRoom.TabIndex = 49
+        Me.cbRoom.Text = "Select Room"
+        '
+        'cbTeacher
+        '
+        Me.cbTeacher.FormattingEnabled = True
+        Me.cbTeacher.Location = New System.Drawing.Point(214, 198)
+        Me.cbTeacher.Name = "cbTeacher"
+        Me.cbTeacher.Size = New System.Drawing.Size(185, 21)
+        Me.cbTeacher.TabIndex = 50
+        Me.cbTeacher.Text = "Select Teacher"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(14, 20)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(39, 13)
+        Me.Label8.TabIndex = 51
+        Me.Label8.Text = "Label8"
+        '
         'Schedule_Add
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -211,6 +221,10 @@ Partial Class Schedule_Add
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(429, 473)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.cbTeacher)
+        Me.Controls.Add(Me.cbRoom)
+        Me.Controls.Add(Me.cbClass)
         Me.Controls.Add(Me.datePicker)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.txtEnd)
@@ -219,12 +233,9 @@ Partial Class Schedule_Add
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnLschedule)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.teacherId)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.txtClassname)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.txtRoomname)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnAdd)
         Me.Name = "Schedule_Add"
@@ -237,12 +248,9 @@ Partial Class Schedule_Add
 
     Friend WithEvents btnLschedule As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents teacherId As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtClassname As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtRoomname As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents btnAdd As Button
     Friend WithEvents txtStart As TextBox
@@ -251,4 +259,8 @@ Partial Class Schedule_Add
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents datePicker As DateTimePicker
+    Friend WithEvents cbClass As ComboBox
+    Friend WithEvents cbRoom As ComboBox
+    Friend WithEvents cbTeacher As ComboBox
+    Friend WithEvents Label8 As Label
 End Class

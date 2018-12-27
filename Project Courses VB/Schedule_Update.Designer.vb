@@ -27,7 +27,6 @@ Partial Class tableSchedule
         Me.btnBack = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.txtIdSchedule = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -38,13 +37,19 @@ Partial Class tableSchedule
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.txtStudent = New System.Windows.Forms.TextBox()
-        Me.txtRoom = New System.Windows.Forms.TextBox()
-        Me.txtTeacher = New System.Windows.Forms.TextBox()
         Me.txtStart = New System.Windows.Forms.TextBox()
         Me.txtEnd = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.DatePicker = New System.Windows.Forms.DateTimePicker()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.cboxClass = New System.Windows.Forms.ComboBox()
+        Me.cboxRoom = New System.Windows.Forms.ComboBox()
+        Me.cboxTeacher = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.comboClass = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.comboRoom = New System.Windows.Forms.ComboBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tableSchedule1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -89,20 +94,10 @@ Partial Class tableSchedule
         Me.Label5.TabIndex = 96
         Me.Label5.Text = "UPDATE SCHEDULE FORM"
         '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(336, 87)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(91, 32)
-        Me.Button4.TabIndex = 95
-        Me.Button4.Text = "Search"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
         'txtSearch
         '
-        Me.txtSearch.Enabled = False
         Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtSearch.Location = New System.Drawing.Point(12, 87)
+        Me.txtSearch.Location = New System.Drawing.Point(118, 89)
         Me.txtSearch.Multiline = True
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.Size = New System.Drawing.Size(309, 32)
@@ -112,7 +107,7 @@ Partial Class tableSchedule
         '
         Me.txtIdSchedule.Enabled = False
         Me.txtIdSchedule.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtIdSchedule.Location = New System.Drawing.Point(619, 89)
+        Me.txtIdSchedule.Location = New System.Drawing.Point(628, 89)
         Me.txtIdSchedule.Multiline = True
         Me.txtIdSchedule.Name = "txtIdSchedule"
         Me.txtIdSchedule.Size = New System.Drawing.Size(185, 30)
@@ -201,41 +196,10 @@ Partial Class tableSchedule
         Me.Label7.TabIndex = 104
         Me.Label7.Text = "End Time"
         '
-        'txtStudent
-        '
-        Me.txtStudent.Enabled = False
-        Me.txtStudent.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtStudent.Location = New System.Drawing.Point(619, 125)
-        Me.txtStudent.Multiline = True
-        Me.txtStudent.Name = "txtStudent"
-        Me.txtStudent.Size = New System.Drawing.Size(185, 30)
-        Me.txtStudent.TabIndex = 105
-        '
-        'txtRoom
-        '
-        Me.txtRoom.Enabled = False
-        Me.txtRoom.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtRoom.Location = New System.Drawing.Point(619, 161)
-        Me.txtRoom.Multiline = True
-        Me.txtRoom.Name = "txtRoom"
-        Me.txtRoom.Size = New System.Drawing.Size(185, 30)
-        Me.txtRoom.TabIndex = 106
-        '
-        'txtTeacher
-        '
-        Me.txtTeacher.Enabled = False
-        Me.txtTeacher.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtTeacher.Location = New System.Drawing.Point(619, 197)
-        Me.txtTeacher.Multiline = True
-        Me.txtTeacher.Name = "txtTeacher"
-        Me.txtTeacher.Size = New System.Drawing.Size(185, 30)
-        Me.txtTeacher.TabIndex = 107
-        '
         'txtStart
         '
-        Me.txtStart.Enabled = False
         Me.txtStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtStart.Location = New System.Drawing.Point(619, 233)
+        Me.txtStart.Location = New System.Drawing.Point(628, 233)
         Me.txtStart.Multiline = True
         Me.txtStart.Name = "txtStart"
         Me.txtStart.Size = New System.Drawing.Size(185, 30)
@@ -243,9 +207,8 @@ Partial Class tableSchedule
         '
         'txtEnd
         '
-        Me.txtEnd.Enabled = False
         Me.txtEnd.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtEnd.Location = New System.Drawing.Point(619, 269)
+        Me.txtEnd.Location = New System.Drawing.Point(628, 269)
         Me.txtEnd.Multiline = True
         Me.txtEnd.Name = "txtEnd"
         Me.txtEnd.Size = New System.Drawing.Size(185, 30)
@@ -264,11 +227,87 @@ Partial Class tableSchedule
         '
         'DatePicker
         '
-        Me.DatePicker.Location = New System.Drawing.Point(619, 306)
+        Me.DatePicker.Location = New System.Drawing.Point(628, 306)
         Me.DatePicker.MinimumSize = New System.Drawing.Size(185, 30)
         Me.DatePicker.Name = "DatePicker"
         Me.DatePicker.Size = New System.Drawing.Size(185, 30)
         Me.DatePicker.TabIndex = 111
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(12, 92)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(95, 29)
+        Me.Label9.TabIndex = 112
+        Me.Label9.Text = "Search"
+        '
+        'cboxClass
+        '
+        Me.cboxClass.FormattingEnabled = True
+        Me.cboxClass.Location = New System.Drawing.Point(628, 125)
+        Me.cboxClass.Name = "cboxClass"
+        Me.cboxClass.Size = New System.Drawing.Size(185, 21)
+        Me.cboxClass.TabIndex = 113
+        '
+        'cboxRoom
+        '
+        Me.cboxRoom.FormattingEnabled = True
+        Me.cboxRoom.Location = New System.Drawing.Point(628, 161)
+        Me.cboxRoom.Name = "cboxRoom"
+        Me.cboxRoom.Size = New System.Drawing.Size(185, 21)
+        Me.cboxRoom.TabIndex = 114
+        '
+        'cboxTeacher
+        '
+        Me.cboxTeacher.FormattingEnabled = True
+        Me.cboxTeacher.Location = New System.Drawing.Point(628, 197)
+        Me.cboxTeacher.Name = "cboxTeacher"
+        Me.cboxTeacher.Size = New System.Drawing.Size(185, 21)
+        Me.cboxTeacher.TabIndex = 115
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(43, 40)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(45, 13)
+        Me.Label10.TabIndex = 116
+        Me.Label10.Text = "Label10"
+        '
+        'comboClass
+        '
+        Me.comboClass.FormattingEnabled = True
+        Me.comboClass.Location = New System.Drawing.Point(628, 125)
+        Me.comboClass.Name = "comboClass"
+        Me.comboClass.Size = New System.Drawing.Size(185, 21)
+        Me.comboClass.TabIndex = 113
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(628, 161)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(185, 21)
+        Me.ComboBox2.TabIndex = 114
+        '
+        'comboRoom
+        '
+        Me.comboRoom.FormattingEnabled = True
+        Me.comboRoom.Location = New System.Drawing.Point(628, 161)
+        Me.comboRoom.Name = "comboRoom"
+        Me.comboRoom.Size = New System.Drawing.Size(185, 21)
+        Me.comboRoom.TabIndex = 114
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(628, 197)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(185, 21)
+        Me.ComboBox3.TabIndex = 115
         '
         'tableSchedule
         '
@@ -278,20 +317,21 @@ Partial Class tableSchedule
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(825, 519)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.cboxTeacher)
+        Me.Controls.Add(Me.cboxRoom)
+        Me.Controls.Add(Me.cboxClass)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.DatePicker)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.txtEnd)
         Me.Controls.Add(Me.txtStart)
-        Me.Controls.Add(Me.txtTeacher)
-        Me.Controls.Add(Me.txtRoom)
-        Me.Controls.Add(Me.txtStudent)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.txtIdSchedule)
         Me.Controls.Add(Me.Label4)
@@ -314,7 +354,6 @@ Partial Class tableSchedule
     Friend WithEvents btnBack As Button
     Friend WithEvents btnDelete As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button4 As Button
     Friend WithEvents txtSearch As TextBox
     Friend WithEvents txtIdSchedule As TextBox
     Friend WithEvents Label4 As Label
@@ -325,11 +364,18 @@ Partial Class tableSchedule
     Friend WithEvents Label1 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents txtStudent As TextBox
-    Friend WithEvents txtRoom As TextBox
-    Friend WithEvents txtTeacher As TextBox
     Friend WithEvents txtStart As TextBox
     Friend WithEvents txtEnd As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents DatePicker As DateTimePicker
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents cboxClass As ComboBox
+    Friend WithEvents cboxRoom As ComboBox
+    Friend WithEvents cboxTeacher As ComboBox
+    Friend WithEvents comboClass As ComboBox
+    Friend WithEvents comboRoom As ComboBox
 End Class

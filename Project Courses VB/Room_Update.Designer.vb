@@ -170,7 +170,6 @@ Partial Class Room_Update
         '
         'cbClass1
         '
-        Me.cbClass1.Enabled = False
         Me.cbClass1.FormattingEnabled = True
         Me.cbClass1.Location = New System.Drawing.Point(636, 135)
         Me.cbClass1.Name = "cbClass1"

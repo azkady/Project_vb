@@ -23,10 +23,10 @@ Partial Class Teacher_Add
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Teacher_Add))
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtfullname = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtLesson = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -36,14 +36,14 @@ Partial Class Teacher_Add
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txtfullname
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox1.Location = New System.Drawing.Point(223, 122)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox1.TabIndex = 16
+        Me.txtfullname.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.txtfullname.Location = New System.Drawing.Point(223, 122)
+        Me.txtfullname.Multiline = True
+        Me.txtfullname.Name = "txtfullname"
+        Me.txtfullname.Size = New System.Drawing.Size(185, 40)
+        Me.txtfullname.TabIndex = 16
         '
         'Label1
         '
@@ -67,14 +67,14 @@ Partial Class Teacher_Add
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "Add Teacher Form"
         '
-        'TextBox2
+        'txtLesson
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox2.Location = New System.Drawing.Point(223, 181)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox2.TabIndex = 13
+        Me.txtLesson.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.txtLesson.Location = New System.Drawing.Point(223, 181)
+        Me.txtLesson.Multiline = True
+        Me.txtLesson.Name = "txtLesson"
+        Me.txtLesson.Size = New System.Drawing.Size(185, 40)
+        Me.txtLesson.TabIndex = 13
         '
         'Label2
         '
@@ -150,10 +150,10 @@ Partial Class Teacher_Add
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtfullname)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtLesson)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Teacher_Add"
@@ -164,10 +164,10 @@ Partial Class Teacher_Add
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtfullname As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtLesson As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox3 As TextBox

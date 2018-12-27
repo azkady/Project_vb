@@ -13,7 +13,7 @@ Public Class Room_Update
     Sub comboboxClass()
         conn.Open()
         Dim str As String
-        str = "select Student_Class from class"
+        str = "select Student_Class from student"
         cmd = New MySqlCommand(str, conn)
         rd = cmd.ExecuteReader
         If rd.HasRows Then

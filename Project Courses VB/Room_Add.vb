@@ -27,7 +27,7 @@ Public Class Room_Add
     Sub comboboxClass()
         conn.Open()
         Dim str As String
-        str = "select Student_Class from class"
+        str = "select Student_Class from student"
         cmd = New MySqlCommand(str, conn)
         rd = cmd.ExecuteReader
         If rd.HasRows Then
@@ -38,6 +38,7 @@ Public Class Room_Add
         End If
         conn.Close()
     End Sub
+
 
     Private Sub Room_Add_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call comboboxClass()
