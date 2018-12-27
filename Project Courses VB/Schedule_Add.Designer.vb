@@ -23,34 +23,34 @@ Partial Class Schedule_Add
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Schedule_Add))
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnLschedule = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.teacherId = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtClassname = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtRoomname = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.txtStart = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtEnd = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.datePicker = New System.Windows.Forms.DateTimePicker()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button2
+        'btnLschedule
         '
-        Me.Button2.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.Button2.Location = New System.Drawing.Point(241, 393)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(120, 49)
-        Me.Button2.TabIndex = 40
-        Me.Button2.Text = "List Student"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnLschedule.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.btnLschedule.Location = New System.Drawing.Point(241, 393)
+        Me.btnLschedule.Name = "btnLschedule"
+        Me.btnLschedule.Size = New System.Drawing.Size(120, 49)
+        Me.btnLschedule.TabIndex = 40
+        Me.btnLschedule.Text = "List Schedule"
+        Me.btnLschedule.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -63,145 +63,145 @@ Partial Class Schedule_Add
         Me.PictureBox1.TabIndex = 39
         Me.PictureBox1.TabStop = False
         '
-        'TextBox3
+        'teacherId
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox3.Location = New System.Drawing.Point(214, 192)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox3.TabIndex = 38
+        Me.teacherId.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.teacherId.Location = New System.Drawing.Point(214, 192)
+        Me.teacherId.Multiline = True
+        Me.teacherId.Name = "teacherId"
+        Me.teacherId.Size = New System.Drawing.Size(185, 40)
+        Me.teacherId.TabIndex = 38
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(11, 198)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(147, 34)
+        Me.Label3.Size = New System.Drawing.Size(159, 31)
         Me.Label3.TabIndex = 37
         Me.Label3.Text = "Teacher ID"
         '
-        'TextBox1
+        'txtClassname
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox1.Location = New System.Drawing.Point(214, 100)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox1.TabIndex = 36
+        Me.txtClassname.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.txtClassname.Location = New System.Drawing.Point(214, 100)
+        Me.txtClassname.Multiline = True
+        Me.txtClassname.Name = "txtClassname"
+        Me.txtClassname.Size = New System.Drawing.Size(185, 40)
+        Me.txtClassname.TabIndex = 36
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(11, 103)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(157, 34)
+        Me.Label1.Size = New System.Drawing.Size(172, 31)
         Me.Label1.TabIndex = 35
         Me.Label1.Text = "Class Name"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Lemon/Milk", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(53, 49)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(328, 38)
+        Me.Label4.Size = New System.Drawing.Size(269, 31)
         Me.Label4.TabIndex = 34
         Me.Label4.Text = "Add Schedule Form"
         '
-        'TextBox2
+        'txtRoomname
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox2.Location = New System.Drawing.Point(214, 146)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox2.TabIndex = 33
+        Me.txtRoomname.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.txtRoomname.Location = New System.Drawing.Point(214, 146)
+        Me.txtRoomname.Multiline = True
+        Me.txtRoomname.Name = "txtRoomname"
+        Me.txtRoomname.Size = New System.Drawing.Size(185, 40)
+        Me.txtRoomname.TabIndex = 33
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(11, 152)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(167, 34)
+        Me.Label2.Size = New System.Drawing.Size(174, 31)
         Me.Label2.TabIndex = 32
         Me.Label2.Text = "Room Name"
         '
-        'Button1
+        'btnAdd
         '
-        Me.Button1.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.Button1.Location = New System.Drawing.Point(60, 393)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(120, 49)
-        Me.Button1.TabIndex = 31
-        Me.Button1.Text = "Add Student"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnAdd.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.btnAdd.Location = New System.Drawing.Point(60, 393)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(120, 49)
+        Me.btnAdd.TabIndex = 31
+        Me.btnAdd.Text = "Add Schedule"
+        Me.btnAdd.UseVisualStyleBackColor = False
         '
-        'TextBox4
+        'txtStart
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox4.Location = New System.Drawing.Point(214, 238)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox4.TabIndex = 42
+        Me.txtStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.txtStart.Location = New System.Drawing.Point(214, 238)
+        Me.txtStart.Multiline = True
+        Me.txtStart.Name = "txtStart"
+        Me.txtStart.Size = New System.Drawing.Size(185, 40)
+        Me.txtStart.TabIndex = 42
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(11, 244)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(143, 34)
+        Me.Label5.Size = New System.Drawing.Size(149, 31)
         Me.Label5.TabIndex = 41
         Me.Label5.Text = "Start Time"
         '
-        'TextBox5
+        'txtEnd
         '
-        Me.TextBox5.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox5.Location = New System.Drawing.Point(214, 284)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(185, 40)
-        Me.TextBox5.TabIndex = 44
+        Me.txtEnd.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.txtEnd.Location = New System.Drawing.Point(214, 284)
+        Me.txtEnd.Multiline = True
+        Me.txtEnd.Name = "txtEnd"
+        Me.txtEnd.Size = New System.Drawing.Size(185, 40)
+        Me.txtEnd.TabIndex = 44
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(11, 290)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(131, 34)
+        Me.Label6.Size = New System.Drawing.Size(137, 31)
         Me.Label6.TabIndex = 43
         Me.Label6.Text = "End Time"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Adobe Gothic Std B", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(11, 336)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(74, 34)
+        Me.Label7.Size = New System.Drawing.Size(76, 31)
         Me.Label7.TabIndex = 45
         Me.Label7.Text = "Date"
         '
-        'DateTimePicker1
+        'datePicker
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(214, 335)
-        Me.DateTimePicker1.MinimumSize = New System.Drawing.Size(185, 40)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(185, 40)
-        Me.DateTimePicker1.TabIndex = 47
+        Me.datePicker.Location = New System.Drawing.Point(214, 335)
+        Me.datePicker.MinimumSize = New System.Drawing.Size(185, 40)
+        Me.datePicker.Name = "datePicker"
+        Me.datePicker.Size = New System.Drawing.Size(185, 40)
+        Me.datePicker.TabIndex = 47
         '
         'Schedule_Add
         '
@@ -211,22 +211,22 @@ Partial Class Schedule_Add
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(429, 473)
-        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.datePicker)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.txtEnd)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txtStart)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnLschedule)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.teacherId)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtClassname)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtRoomname)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnAdd)
         Me.Name = "Schedule_Add"
         Me.Text = "Schedule_Add"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -235,20 +235,20 @@ Partial Class Schedule_Add
 
     End Sub
 
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnLschedule As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents teacherId As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtClassname As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtRoomname As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents btnAdd As Button
+    Friend WithEvents txtStart As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtEnd As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents datePicker As DateTimePicker
 End Class

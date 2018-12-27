@@ -6,17 +6,17 @@ Project Courses VB
 </name>
 </assembly>
 <members>
-<member name="T:Project_Courses_VB.My.Resources.Resources">
+<member name="T:ProjectCoursesVB.My.Resources.Resources">
 <summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
 </member>
-<member name="P:Project_Courses_VB.My.Resources.Resources.ResourceManager">
+<member name="P:ProjectCoursesVB.My.Resources.Resources.ResourceManager">
 <summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
 </member>
-<member name="P:Project_Courses_VB.My.Resources.Resources.Culture">
+<member name="P:ProjectCoursesVB.My.Resources.Resources.Culture">
 <summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.

@@ -19,3 +19,97 @@ C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\bin\Debug
 C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.exe
 C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.xml
 C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.pdb
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.exe.config
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.exe
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.xml
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.pdb
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.exe
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.pdb
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.xml
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.vbprojResolveAssemblyReference.cache
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Login.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Main_Menu.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Resources.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Room_Add.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Room_Update.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Schedule_Add.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Schedule_Update.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Student_Add.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Student_Update.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Teacher_Add.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Teacher_Update.resources
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.vbproj.GenerateResource.Cache
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.exe.config
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.exe
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.xml
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.pdb
+<<<<<<< HEAD
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.exe
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.pdb
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.xml
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\MySql.Data.dll
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\MySql.Data.xml
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.vbprojResolveAssemblyReference.cache
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Login.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Main_Menu.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Resources.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Room_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Room_Update.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Schedule_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Schedule_Update.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Student_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Student_Update.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Teacher_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.Teacher_Update.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.vbproj.GenerateResource.Cache
+=======
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\bin\Debug\MySql.Data.dll
+C:\Users\Azka\Downloads\Project_vb\Project Courses VB\bin\Debug\MySql.Data.xml
+>>>>>>> af31d5ca91256ddb7b073c469d3f5335602cad7f
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Courses_VB.tableSchedule.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\Project_Vb.exe.config
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\Project_Vb.exe
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\Project_Vb.pdb
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\Project_Vb.xml
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Login.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Main_Menu.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Resources.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Room_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Room_Update.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Schedule_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.tableSchedule.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Student_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Student_Update.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Teacher_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.Teacher_Update.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.exe
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.xml
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\Project_Vb.pdb
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Login.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Main_Menu.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Resources.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Room_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Room_Update.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Schedule_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.tableSchedule.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Student_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Student_Update.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Teacher_Add.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Teacher_Update.resources
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.exe
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.pdb
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\bin\Debug\Project Courses VB.xml
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\bin\Debug\MySql.Data.xml
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.vbprojResolveAssemblyReference.cache
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Login.resources
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Main_Menu.resources
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Resources.resources
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Room_Add.resources
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Room_Update.resources
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Schedule_Add.resources
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.tableSchedule.resources
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Student_Add.resources
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Student_Update.resources
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Teacher_Add.resources
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Teacher_Update.resources
+C:\Users\Acer\Desktop\Project Courses VB\Project_vb\Project Courses VB\obj\Debug\Project Courses VB.vbproj.GenerateResource.Cache
