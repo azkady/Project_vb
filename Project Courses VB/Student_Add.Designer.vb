@@ -131,10 +131,12 @@ Partial Class Student_Add
         '
         'cbClass
         '
+        Me.cbClass.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbClass.FormattingEnabled = True
-        Me.cbClass.Location = New System.Drawing.Point(231, 166)
+        Me.cbClass.Location = New System.Drawing.Point(231, 163)
+        Me.cbClass.MinimumSize = New System.Drawing.Size(33, 0)
         Me.cbClass.Name = "cbClass"
-        Me.cbClass.Size = New System.Drawing.Size(185, 21)
+        Me.cbClass.Size = New System.Drawing.Size(185, 39)
         Me.cbClass.TabIndex = 31
         '
         'Student_Add

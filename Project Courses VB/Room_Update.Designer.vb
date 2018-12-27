@@ -78,10 +78,10 @@ Partial Class Room_Update
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(96, 43)
         Me.btnBack.TabIndex = 98
-        Me.btnBack.Text = "Back"
+        Me.btnBack.Text = "Back to Menu"
         Me.btnBack.UseVisualStyleBackColor = True
         '
-        'btnDelete
+        'tnDelete
         '
         Me.tnDelete.Location = New System.Drawing.Point(579, 233)
         Me.tnDelete.Name = "tnDelete"

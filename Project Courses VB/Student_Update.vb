@@ -23,9 +23,9 @@ Public Class Student_Update
     End Sub
     Sub showStudent()
         conn.Open()
-        DA = New MySqlDataAdapter("select Student_ID, Student_Name, Student_Class, Student_Contact from student", conn)
+        da = New MySqlDataAdapter("select Student_ID, Student_Name, Student_Class, Student_Contact from student", conn)
         ds = New DataSet
-        DA.Fill(ds, "student")
+        da.Fill(ds, "student")
         DataGridStudent.DataSource = ds.Tables("student")
     End Sub
 
@@ -118,10 +118,6 @@ Public Class Student_Update
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Hide()
-        Main_menu.Show()
-    End Sub
-
-    Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
-
+        Main_Menu.Show()
     End Sub
 End Class

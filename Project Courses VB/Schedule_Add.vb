@@ -1,21 +1,89 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports Project_Courses_VB.ConnectionDB
+Imports MySql.Data.MySqlClient
 Public Class Schedule_Add
+    Dim conn As New MySqlConnection("Server=localhost; user=root; database=courses_project")
+    Dim cmd As New MySqlCommand
+    Dim data As New MySqlDataAdapter
+
+    Dim ds As New DataSet
     Private Sub btnLstudent_Click(sender As Object, e As EventArgs) Handles btnLschedule.Click
         Me.Hide()
         tableSchedule.Show()
+    End Sub
 
-    End Sub
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        Call koneksi()
-        Dim author As String
+        conn.Open()
         Try
-            Dim str As String
-            str = "insert into room_schedule values ('" & teacherId.Text & "','" & txtClassname.Text & "',,'" & txtRoomname.Text & "','" & txtStart.Text & "','" & txtEnd.Text & "','" & datePicker.Text & "','" & author & "')"
-            cmd = New MySqlCommand(str, conn)
+            cmd.CommandType = CommandType.Text
+            cmd.CommandText = "INSERT INTO room_schedule ( Teacher_ID, Student_Class, Class_Name, Start_Time, End_Time, Date) VALUES ('" & cbTeacherID.Text & "', '" & cbClassName.Text & "', '" & cbRoomName.Text & "','" & txtStart.Text & "','" & txtEnd.Text & "','" & datePicker.Text & "')"
+            cmd.Connection = conn
             cmd.ExecuteNonQuery()
-            MessageBox.Show("Insert Data success")
+            MsgBox("Data berhasil disimpan", MsgBoxStyle.Information, "Informasi")
         Catch ex As Exception
-            MessageBox.Show("Insert Data Failed")
+            MsgBox("Data gagal disimpan" + ex.Message, MsgBoxStyle.Critical)
         End Try
+        conn.Close()
     End Sub
+
+    Private Sub Load_Teacher_ID(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Call comboboxClass_Teacher_ID()
+    End Sub
+
+    Sub comboboxClass_Teacher_ID()
+        conn.Open()
+        Dim str As String
+        str = "select Teacher_ID from teacher"
+        cmd = New MySqlCommand(str, conn)
+        rd = cmd.ExecuteReader
+        If rd.HasRows Then
+            Do While rd.Read
+                cbTeacherID.Items.Add(rd("Teacher_ID"))
+            Loop
+        Else
+        End If
+        conn.Close()
+    End Sub
+
+
+    Private Sub load_Class_Name(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Call comboboxClass_Class_Name()
+    End Sub
+
+    Sub comboboxClass_Class_Name()
+        conn.Open()
+        Dim str As String
+        str = "select Student_Class from class"
+        cmd = New MySqlCommand(str, conn)
+        rd = cmd.ExecuteReader
+        If rd.HasRows Then
+            Do While rd.Read
+                cbClassName.Items.Add(rd("Student_Class"))
+            Loop
+        Else
+        End If
+        conn.Close()
+    End Sub
+
+    Private Sub Load_Room_Name(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Call comboboxClass_Room_Name()
+    End Sub
+
+    Sub comboboxClass_Room_Name()
+        conn.Open()
+        Dim str As String
+        str = "select Class_Name from class"
+        cmd = New MySqlCommand(str, conn)
+        rd = cmd.ExecuteReader
+        If rd.HasRows Then
+            Do While rd.Read
+                cbRoomName.Items.Add(rd("Class_Name"))
+            Loop
+        Else
+        End If
+        conn.Close()
+    End Sub
+
 End Class

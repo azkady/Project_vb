@@ -25,6 +25,8 @@ Public Class Student_Add
         conn.Close()
     End Sub
 
+
+
     Private Sub Student_Add_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Call comboboxClass()
@@ -43,4 +45,6 @@ Public Class Student_Add
         End If
         conn.Close()
     End Sub
+
+
 End Class
