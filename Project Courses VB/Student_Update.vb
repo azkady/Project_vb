@@ -32,6 +32,7 @@ Public Class Student_Update
     Private Sub Student_Update_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call showStudent()
         Call SetDataGrid()
+        TextBox5.Focus()
     End Sub
 
     Private Sub DataGridStudent_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridStudent.CellContentClick
@@ -99,6 +100,7 @@ Public Class Student_Update
         da = New MySqlDataAdapter("SELECT Student_ID, Student_Name, Student_Class, Student_Contact FROM student WHERE Student_ID like '%" & TextBox5.Text & "%' or Student_Name like '%" & TextBox5.Text & "%' or  Student_Class like '%" & TextBox5.Text & "%'or Student_Contact like '%" & TextBox5.Text & "%'", conn)
         da.Fill(Table)
         DataGridStudent.DataSource = Table
+
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
@@ -114,5 +116,9 @@ Public Class Student_Update
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         TextBox5.Enabled = True
         searchdata()
+    End Sub
+
+    Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
+        TextBox5.Focus()
     End Sub
 End Class

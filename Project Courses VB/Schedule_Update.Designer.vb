@@ -203,7 +203,6 @@ Partial Class tableSchedule
         '
         'txtStudent
         '
-        Me.txtStudent.Enabled = False
         Me.txtStudent.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.txtStudent.Location = New System.Drawing.Point(619, 125)
         Me.txtStudent.Multiline = True
@@ -213,7 +212,6 @@ Partial Class tableSchedule
         '
         'txtRoom
         '
-        Me.txtRoom.Enabled = False
         Me.txtRoom.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.txtRoom.Location = New System.Drawing.Point(619, 161)
         Me.txtRoom.Multiline = True
@@ -223,7 +221,6 @@ Partial Class tableSchedule
         '
         'txtTeacher
         '
-        Me.txtTeacher.Enabled = False
         Me.txtTeacher.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.txtTeacher.Location = New System.Drawing.Point(619, 197)
         Me.txtTeacher.Multiline = True
@@ -233,7 +230,6 @@ Partial Class tableSchedule
         '
         'txtStart
         '
-        Me.txtStart.Enabled = False
         Me.txtStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.txtStart.Location = New System.Drawing.Point(619, 233)
         Me.txtStart.Multiline = True
@@ -243,7 +239,6 @@ Partial Class tableSchedule
         '
         'txtEnd
         '
-        Me.txtEnd.Enabled = False
         Me.txtEnd.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.txtEnd.Location = New System.Drawing.Point(619, 269)
         Me.txtEnd.Multiline = True

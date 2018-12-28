@@ -29,6 +29,20 @@ Public Class tableSchedule
             MessageBox.Show("Update Class Failed")
         End Try
     End Sub
+
+    Sub checkdb()
+        Dim author As String
+        Try
+            Call koneksi()
+            Dim str As String
+            str = "Update class set Teacher_ID = '" & txtTeacher.Text & "', Student_Class = '" & txtStudent.Text & "', Class_Name = '" & txtRoom.Text & "', Start_Time = '" & txtStart.Text & "', End_Time = '" & txtEnd.Text & "', Date = '" & DatePicker.Text & "', Author = '" & author & "' where ID_Class = '" & txtIdSchedule.Text & "'"
+            cmd = New MySqlCommand(str, conn)
+            cmd.ExecuteNonQuery()
+            MessageBox.Show("Update Class Success")
+        Catch ex As Exception
+            MessageBox.Show("Update Class Failed")
+        End Try
+    End Sub
     Sub refreshTable()
         Call koneksi()
         Dim Table As New DataTable()
