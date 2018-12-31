@@ -28,8 +28,13 @@ Public Class Schedule_Add
         Else
 
             cmd.CommandType = CommandType.Text
+<<<<<<< HEAD
             cmd.CommandText = "INSERT INTO room_schedule ( Teacher_ID, Student_Class, Class_Name, Start_Time, End_Time, Date) VALUES ('" & cbTeacherID.Text & "', '" & cbClassName.Text & "', '" & cbRoomName.Text & "','" & txtStart.Text & "','" & txtEnd.Text & "','" & datePicker.Text & "')"
             cmd.Connection = conn2
+=======
+            cmd.CommandText = "INSERT INTO room_schedule ( Teacher_Name, Student_Class, Class_Name, Start_Time, End_Time, Date) VALUES ('" & cbTeacherName.Text & "', '" & cbClassName.Text & "', '" & cbRoomName.Text & "','" & txtStart.Text & "','" & txtEnd.Text & "','" & datePicker.Text & "')"
+            cmd.Connection = conn
+>>>>>>> 897b6f2cdb4032b674e35e436e749138ae36d40f
             cmd.ExecuteNonQuery()
             MsgBox("Data berhasil disimpan", MsgBoxStyle.Information, "Informasi")
         End If
@@ -39,20 +44,20 @@ Public Class Schedule_Add
 
     End Sub
 
-    Private Sub Load_Teacher_ID(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Load_Teacher_Name(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Call comboboxClass_Teacher_ID()
+        Call comboboxClass_Teacher_Name()
     End Sub
 
-    Sub comboboxClass_Teacher_ID()
+    Sub comboboxClass_Teacher_Name()
         conn.Open()
         Dim str As String
-        str = "select Teacher_ID from teacher"
+        str = "select Teacher_Name from teacher"
         cmd = New MySqlCommand(str, conn)
         rd = cmd.ExecuteReader
         If rd.HasRows Then
             Do While rd.Read
-                cbTeacherID.Items.Add(rd("Teacher_ID"))
+                cbTeacherName.Items.Add(rd("Teacher_Name"))
             Loop
         Else
         End If
