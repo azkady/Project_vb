@@ -10,9 +10,9 @@ Public Class tableSchedule
     Sub SetDataGrid()
         Try
             tableSchedule1.Columns(0).Width = 50
-            tableSchedule1.Columns(1).Width = 130
+            tableSchedule1.Columns(1).Width = 100
             tableSchedule1.Columns(2).Width = 100
-            tableSchedule1.Columns(3).Width = 50
+            tableSchedule1.Columns(3).Width = 100
             tableSchedule1.Columns(4).Width = 100
             tableSchedule1.Columns(5).Width = 100
             tableSchedule1.Columns(6).Width = 100
@@ -21,7 +21,7 @@ Public Class tableSchedule
             tableSchedule1.Columns(0).HeaderText = "ID"
             tableSchedule1.Columns(1).HeaderText = "Student Class"
             tableSchedule1.Columns(2).HeaderText = "Room Name"
-            tableSchedule1.Columns(3).HeaderText = "Teacher ID"
+            tableSchedule1.Columns(3).HeaderText = "Teacher Name"
             tableSchedule1.Columns(4).HeaderText = "Start Time"
             tableSchedule1.Columns(5).HeaderText = "End Time"
             tableSchedule1.Columns(6).HeaderText = "Date"
@@ -32,10 +32,11 @@ Public Class tableSchedule
 
     Sub showSchedule()
         conn.Open()
-        da = New MySqlDataAdapter("select ID_Schedule, Student_Class, Class_Name, Teacher_ID, Start_Time, End_Time, Date from room_schedule", conn)
+        da = New MySqlDataAdapter("select ID_Schedule, Student_Class, Class_Name, Teacher_Name, Start_Time, End_Time, Date from room_schedule", conn)
         ds = New DataSet
         da.Fill(ds, "room_schedule")
         tableSchedule1.DataSource = ds.Tables("room_schedule")
+        conn.Close()
     End Sub
 
     Private Sub Schedule_Update_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -53,26 +54,49 @@ Public Class tableSchedule
             With tableSchedule1
                 baris = .CurrentRow.Index
                 txtIdSchedule.Text = .Item(0, baris).Value.ToString
-                txtStudent.Text = .Item(1, baris).Value
-                txtRoom.Text = .Item(2, baris).Value
-                txtTeacher.Text = .Item(3, baris).Value
-                txtStart.Text = .Item(4, baris).Value
-                txtEnd.Text = .Item(5, baris).Value
-                DatePicker.Text = .Item(6, baris).Value
+                txtStudent.Text = .Item(1, baris).Value.ToString
+                txtRoom.Text = .Item(2, baris).Value.ToString
+                cbTeacherName.Text = .Item(3, baris).Value.ToString
+                txtStart.Text = .Item(4, baris).Value.ToString
+                txtEnd.Text = .Item(5, baris).Value.ToString
+                DatePicker.Text = .Item(6, baris).Value.ToString
 
 
-                txtTeacher.Enabled = True
+                cbTeacherName.Enabled = True
                 txtStart.Enabled = True
                 txtEnd.Enabled = True
                 DatePicker.Enabled = True
 
-                txtTeacher.Focus()
+                cbTeacherName.Focus()
 
             End With
         End If
     End Sub
 
+
+    Private Sub load_Teacher_Name(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Call comboboxClass_Teacher_Name()
+    End Sub
+
+    Sub comboboxClass_Teacher_Name()
+        conn.Open()
+        Dim str As String
+        str = "select Teacher_Name from teacher"
+        cmd = New MySqlCommand(str, conn)
+        rd = cmd.ExecuteReader
+        If rd.HasRows Then
+            Do While rd.Read
+                cbTeacherName.Items.Add(rd("Teacher_Name"))
+            Loop
+        Else
+        End If
+        conn.Close()
+    End Sub
+
+
     Sub deleteSchedule()
+        conn.Open()
         Try
             Call koneksi()
             Dim str As String
@@ -83,19 +107,22 @@ Public Class tableSchedule
         Catch ex As Exception
             MessageBox.Show("Delete Schedule Failed")
         End Try
+        conn.Close()
     End Sub
     Sub updateStudent()
         Dim author As String
+        conn.Open()
         Try
             Call koneksi()
             Dim str As String
-            str = "Update room_schedule set Teacher_ID = '" & txtTeacher.Text & "', Start_Time = '" & txtStart.Text & "', End_Time = '" & txtEnd.Text & "', Date = '" & DatePicker.Text & "' where ID_Schedule = '" & txtIdSchedule.Text & "'"
+            str = "Update room_schedule set Teacher_Name = '" & cbTeacherName.Text & "', Start_Time = '" & txtStart.Text & "', End_Time = '" & txtEnd.Text & "', Date = '" & DatePicker.Text & "' where ID_Schedule = '" & txtIdSchedule.Text & "'"
             cmd = New MySqlCommand(str, conn)
             cmd.ExecuteNonQuery()
             MessageBox.Show("Update Schedule Success")
         Catch ex As Exception
             MessageBox.Show("Update Schedule Failed")
         End Try
+        conn.Close()
     End Sub
     Sub refreshTable()
         Call koneksi()
@@ -109,7 +136,7 @@ Public Class tableSchedule
 
         Call koneksi()
         Dim Table As New DataTable()
-        da = New MySqlDataAdapter("SELECT ID_Schedule, Teacher_ID, Student_Class, Class_Name, Start_Time, End_Time, Date FROM room_schedule WHERE ID_Schedule like '%" & txtSearch.Text & "%' or Teacher_ID like '%" & txtSearch.Text & "%' or Student_Class like '%" & txtSearch.Text & "%' or Class_Name like '%" & txtSearch.Text & "%' or Start_Time like '%" & txtSearch.Text & "%' or End_Time like '%" & txtSearch.Text & "%' or Date like '%" & txtSearch.Text & "%'", conn)
+        da = New MySqlDataAdapter("SELECT ID_Schedule, Teacher_Name, Student_Class, Class_Name, Start_Time, End_Time, Date FROM room_schedule WHERE ID_Schedule like '%" & txtSearch.Text & "%' or Teacher_Name like '%" & txtSearch.Text & "%' or Student_Class like '%" & txtSearch.Text & "%' or Class_Name like '%" & txtSearch.Text & "%' or Start_Time like '%" & txtSearch.Text & "%' or End_Time like '%" & txtSearch.Text & "%' or Date like '%" & txtSearch.Text & "%'", conn)
         da.Fill(Table)
         tableSchedule1.DataSource = Table
     End Sub

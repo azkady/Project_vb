@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class tableSchedule
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class tableSchedule
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(tableSchedule))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -40,11 +40,11 @@ Partial Class tableSchedule
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtStudent = New System.Windows.Forms.TextBox()
         Me.txtRoom = New System.Windows.Forms.TextBox()
-        Me.txtTeacher = New System.Windows.Forms.TextBox()
         Me.txtStart = New System.Windows.Forms.TextBox()
         Me.txtEnd = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.DatePicker = New System.Windows.Forms.DateTimePicker()
+        Me.cbTeacherName = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tableSchedule1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -83,7 +83,7 @@ Partial Class tableSchedule
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(182, 9)
+        Me.Label5.Location = New System.Drawing.Point(179, 21)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(411, 33)
         Me.Label5.TabIndex = 96
@@ -112,7 +112,7 @@ Partial Class tableSchedule
         '
         Me.txtIdSchedule.Enabled = False
         Me.txtIdSchedule.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtIdSchedule.Location = New System.Drawing.Point(619, 89)
+        Me.txtIdSchedule.Location = New System.Drawing.Point(637, 89)
         Me.txtIdSchedule.Multiline = True
         Me.txtIdSchedule.Name = "txtIdSchedule"
         Me.txtIdSchedule.Size = New System.Drawing.Size(185, 30)
@@ -123,18 +123,18 @@ Partial Class tableSchedule
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(448, 197)
+        Me.Label4.Location = New System.Drawing.Point(442, 197)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(142, 29)
+        Me.Label4.Size = New System.Drawing.Size(186, 29)
         Me.Label4.TabIndex = 92
-        Me.Label4.Text = "Teacher ID"
+        Me.Label4.Text = "Teacher Name"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(448, 161)
+        Me.Label3.Location = New System.Drawing.Point(442, 161)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(158, 29)
         Me.Label3.TabIndex = 91
@@ -162,7 +162,7 @@ Partial Class tableSchedule
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(448, 125)
+        Me.Label2.Location = New System.Drawing.Point(442, 125)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(174, 29)
         Me.Label2.TabIndex = 88
@@ -173,7 +173,7 @@ Partial Class tableSchedule
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(448, 87)
+        Me.Label1.Location = New System.Drawing.Point(442, 87)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(155, 29)
         Me.Label1.TabIndex = 87
@@ -184,7 +184,7 @@ Partial Class tableSchedule
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(448, 233)
+        Me.Label6.Location = New System.Drawing.Point(442, 233)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(134, 29)
         Me.Label6.TabIndex = 103
@@ -195,7 +195,7 @@ Partial Class tableSchedule
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold)
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(448, 269)
+        Me.Label7.Location = New System.Drawing.Point(442, 269)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(126, 29)
         Me.Label7.TabIndex = 104
@@ -205,7 +205,7 @@ Partial Class tableSchedule
         '
         Me.txtStudent.Enabled = False
         Me.txtStudent.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtStudent.Location = New System.Drawing.Point(619, 125)
+        Me.txtStudent.Location = New System.Drawing.Point(637, 125)
         Me.txtStudent.Multiline = True
         Me.txtStudent.Name = "txtStudent"
         Me.txtStudent.Size = New System.Drawing.Size(185, 30)
@@ -215,27 +215,17 @@ Partial Class tableSchedule
         '
         Me.txtRoom.Enabled = False
         Me.txtRoom.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtRoom.Location = New System.Drawing.Point(619, 161)
+        Me.txtRoom.Location = New System.Drawing.Point(637, 161)
         Me.txtRoom.Multiline = True
         Me.txtRoom.Name = "txtRoom"
         Me.txtRoom.Size = New System.Drawing.Size(185, 30)
         Me.txtRoom.TabIndex = 106
         '
-        'txtTeacher
-        '
-        Me.txtTeacher.Enabled = False
-        Me.txtTeacher.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtTeacher.Location = New System.Drawing.Point(619, 197)
-        Me.txtTeacher.Multiline = True
-        Me.txtTeacher.Name = "txtTeacher"
-        Me.txtTeacher.Size = New System.Drawing.Size(185, 30)
-        Me.txtTeacher.TabIndex = 107
-        '
         'txtStart
         '
         Me.txtStart.Enabled = False
         Me.txtStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtStart.Location = New System.Drawing.Point(619, 233)
+        Me.txtStart.Location = New System.Drawing.Point(637, 233)
         Me.txtStart.Multiline = True
         Me.txtStart.Name = "txtStart"
         Me.txtStart.Size = New System.Drawing.Size(185, 30)
@@ -245,7 +235,7 @@ Partial Class tableSchedule
         '
         Me.txtEnd.Enabled = False
         Me.txtEnd.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtEnd.Location = New System.Drawing.Point(619, 269)
+        Me.txtEnd.Location = New System.Drawing.Point(637, 269)
         Me.txtEnd.Multiline = True
         Me.txtEnd.Name = "txtEnd"
         Me.txtEnd.Size = New System.Drawing.Size(185, 30)
@@ -256,7 +246,7 @@ Partial Class tableSchedule
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(448, 305)
+        Me.Label8.Location = New System.Drawing.Point(442, 305)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(67, 29)
         Me.Label8.TabIndex = 110
@@ -264,11 +254,21 @@ Partial Class tableSchedule
         '
         'DatePicker
         '
-        Me.DatePicker.Location = New System.Drawing.Point(619, 306)
+        Me.DatePicker.Location = New System.Drawing.Point(637, 306)
         Me.DatePicker.MinimumSize = New System.Drawing.Size(185, 30)
         Me.DatePicker.Name = "DatePicker"
         Me.DatePicker.Size = New System.Drawing.Size(185, 30)
         Me.DatePicker.TabIndex = 111
+        '
+        'cbTeacherName
+        '
+        Me.cbTeacherName.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbTeacherName.FormattingEnabled = True
+        Me.cbTeacherName.Location = New System.Drawing.Point(637, 196)
+        Me.cbTeacherName.MinimumSize = New System.Drawing.Size(185, 0)
+        Me.cbTeacherName.Name = "cbTeacherName"
+        Me.cbTeacherName.Size = New System.Drawing.Size(185, 32)
+        Me.cbTeacherName.TabIndex = 112
         '
         'tableSchedule
         '
@@ -278,11 +278,11 @@ Partial Class tableSchedule
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(825, 519)
+        Me.Controls.Add(Me.cbTeacherName)
         Me.Controls.Add(Me.DatePicker)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.txtEnd)
         Me.Controls.Add(Me.txtStart)
-        Me.Controls.Add(Me.txtTeacher)
         Me.Controls.Add(Me.txtRoom)
         Me.Controls.Add(Me.txtStudent)
         Me.Controls.Add(Me.Label7)
@@ -327,9 +327,9 @@ Partial Class tableSchedule
     Friend WithEvents Label7 As Label
     Friend WithEvents txtStudent As TextBox
     Friend WithEvents txtRoom As TextBox
-    Friend WithEvents txtTeacher As TextBox
     Friend WithEvents txtStart As TextBox
     Friend WithEvents txtEnd As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents DatePicker As DateTimePicker
+    Friend WithEvents cbTeacherName As ComboBox
 End Class
