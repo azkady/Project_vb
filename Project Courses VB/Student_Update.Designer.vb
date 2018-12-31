@@ -158,7 +158,7 @@ Partial Class Student_Update
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(96, 43)
         Me.Button3.TabIndex = 66
-        Me.Button3.Text = "Update Data"
+        Me.Button3.Text = "Back to Menu"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'txtName
