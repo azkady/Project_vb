@@ -219,18 +219,6 @@ Partial Class tableSchedule
         Me.txtRoom.Size = New System.Drawing.Size(185, 30)
         Me.txtRoom.TabIndex = 106
         '
-<<<<<<< HEAD
-        'txtTeacher
-        '
-        Me.txtTeacher.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.txtTeacher.Location = New System.Drawing.Point(619, 197)
-        Me.txtTeacher.Multiline = True
-        Me.txtTeacher.Name = "txtTeacher"
-        Me.txtTeacher.Size = New System.Drawing.Size(185, 30)
-        Me.txtTeacher.TabIndex = 107
-        '
-=======
->>>>>>> 897b6f2cdb4032b674e35e436e749138ae36d40f
         'txtStart
         '
         Me.txtStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)

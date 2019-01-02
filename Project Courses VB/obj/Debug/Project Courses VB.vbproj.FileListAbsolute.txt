@@ -132,3 +132,8 @@ C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\
 C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\stdole.dll
 C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\Google.Protobuf.xml
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\FlashControlV71.dll
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.Form1.resources
+C:\Users\Gerald Muhammad\Documents\REPO_LOCAL\Project_vb\Project Courses VB\obj\Debug\ProjectCoursesVB.report.resources

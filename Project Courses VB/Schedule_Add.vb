@@ -28,13 +28,10 @@ Public Class Schedule_Add
         Else
 
             cmd.CommandType = CommandType.Text
-<<<<<<< HEAD
-            cmd.CommandText = "INSERT INTO room_schedule ( Teacher_ID, Student_Class, Class_Name, Start_Time, End_Time, Date) VALUES ('" & cbTeacherID.Text & "', '" & cbClassName.Text & "', '" & cbRoomName.Text & "','" & txtStart.Text & "','" & txtEnd.Text & "','" & datePicker.Text & "')"
-            cmd.Connection = conn2
-=======
+
             cmd.CommandText = "INSERT INTO room_schedule ( Teacher_Name, Student_Class, Class_Name, Start_Time, End_Time, Date) VALUES ('" & cbTeacherName.Text & "', '" & cbClassName.Text & "', '" & cbRoomName.Text & "','" & txtStart.Text & "','" & txtEnd.Text & "','" & datePicker.Text & "')"
-            cmd.Connection = conn
->>>>>>> 897b6f2cdb4032b674e35e436e749138ae36d40f
+            cmd.Connection = conn2
+
             cmd.ExecuteNonQuery()
             MsgBox("Data berhasil disimpan", MsgBoxStyle.Information, "Informasi")
         End If

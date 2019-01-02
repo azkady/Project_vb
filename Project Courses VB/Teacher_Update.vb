@@ -77,7 +77,6 @@ Public Class Teacher_Update
         End Try
     End Sub
     Sub updateTeacher()
-        Dim author As String
         Try
             Call koneksi()
             Dim str As String

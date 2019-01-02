@@ -70,7 +70,6 @@ Public Class Room_Update
         End Try
     End Sub
     Sub updateClass()
-        Dim author As String
         Try
             Call koneksi()
             Dim str As String

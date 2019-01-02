@@ -54,19 +54,12 @@ Public Class tableSchedule
             With tableSchedule1
                 baris = .CurrentRow.Index
                 txtIdSchedule.Text = .Item(0, baris).Value.ToString
-<<<<<<< HEAD
-                txtStudent.Text = .Item(1, baris).Value
-                txtRoom.Text = .Item(2, baris).Value
-                txtTeacher.Text = .Item(3, baris).Value
-                txtStart.Text = .Item(4, baris).Value
-                txtEnd.Text = .Item(5, baris).Value
-=======
+
                 txtStudent.Text = .Item(1, baris).Value.ToString
                 txtRoom.Text = .Item(2, baris).Value.ToString
                 cbTeacherName.Text = .Item(3, baris).Value.ToString
                 txtStart.Text = .Item(4, baris).Value.ToString
                 txtEnd.Text = .Item(5, baris).Value.ToString
->>>>>>> 897b6f2cdb4032b674e35e436e749138ae36d40f
                 DatePicker.Text = .Item(6, baris).Value.ToString
 
 
@@ -138,7 +131,7 @@ Public Class tableSchedule
         Try
             Call koneksi()
             Dim str As String
-            str = "Update class set Teacher_ID = '" & txtTeacher.Text & "', Student_Class = '" & txtStudent.Text & "', Class_Name = '" & txtRoom.Text & "', Start_Time = '" & txtStart.Text & "', End_Time = '" & txtEnd.Text & "', Date = '" & DatePicker.Text & "', Author = '" & author & "' where ID_Class = '" & txtIdSchedule.Text & "'"
+            str = "Update class set Teacher_ID = '" & cbTeacherName.Text & "', Student_Class = '" & txtStudent.Text & "', Class_Name = '" & txtRoom.Text & "', Start_Time = '" & txtStart.Text & "', End_Time = '" & txtEnd.Text & "', Date = '" & DatePicker.Text & "' where ID_Class = '" & txtIdSchedule.Text & "'"
             cmd = New MySqlCommand(str, conn)
             cmd.ExecuteNonQuery()
             MessageBox.Show("Update Class Success")
@@ -181,5 +174,13 @@ Public Class tableSchedule
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Hide()
         Main_Menu.Show()
+    End Sub
+
+    Private Sub cbTeacherName_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbTeacherName.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub txtRoom_TextChanged(sender As Object, e As EventArgs) Handles txtRoom.TextChanged
+
     End Sub
 End Class

@@ -31,13 +31,15 @@ Partial Class Room_Add
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnLroom = New System.Windows.Forms.Button()
+        Me.txtCapacity = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnSaveroom
         '
         Me.btnSaveroom.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnSaveroom.Location = New System.Drawing.Point(93, 234)
+        Me.btnSaveroom.Location = New System.Drawing.Point(148, 293)
         Me.btnSaveroom.Name = "btnSaveroom"
         Me.btnSaveroom.Size = New System.Drawing.Size(110, 43)
         Me.btnSaveroom.TabIndex = 1
@@ -109,12 +111,32 @@ Partial Class Room_Add
         'btnLroom
         '
         Me.btnLroom.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnLroom.Location = New System.Drawing.Point(244, 234)
+        Me.btnLroom.Location = New System.Drawing.Point(303, 293)
         Me.btnLroom.Name = "btnLroom"
         Me.btnLroom.Size = New System.Drawing.Size(110, 43)
         Me.btnLroom.TabIndex = 21
         Me.btnLroom.Text = "Room List"
         Me.btnLroom.UseVisualStyleBackColor = False
+        '
+        'txtCapacity
+        '
+        Me.txtCapacity.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.txtCapacity.Location = New System.Drawing.Point(228, 226)
+        Me.txtCapacity.Multiline = True
+        Me.txtCapacity.Name = "txtCapacity"
+        Me.txtCapacity.Size = New System.Drawing.Size(185, 40)
+        Me.txtCapacity.TabIndex = 22
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(25, 235)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(129, 31)
+        Me.Label3.TabIndex = 23
+        Me.Label3.Text = "Capacity"
         '
         'Room_Add
         '
@@ -123,7 +145,9 @@ Partial Class Room_Add
         Me.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(433, 310)
+        Me.ClientSize = New System.Drawing.Size(442, 378)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtCapacity)
         Me.Controls.Add(Me.btnLroom)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtRoomname)
@@ -147,4 +171,6 @@ Partial Class Room_Add
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnLroom As Button
+    Friend WithEvents txtCapacity As TextBox
+    Friend WithEvents Label3 As Label
 End Class
