@@ -183,4 +183,12 @@ Public Class tableSchedule
     Private Sub txtRoom_TextChanged(sender As Object, e As EventArgs) Handles txtRoom.TextChanged
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
+        Dim Report As New CrystalReport1
+        Me.Hide()
+        Form1.Show()
+
+
+    End Sub
 End Class
