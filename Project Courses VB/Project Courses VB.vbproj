@@ -102,11 +102,26 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ConnectionDB.vb" />
+    <Compile Include="coursesDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>coursesDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="courses_projectDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>courses_projectDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CrystalReport1.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CrystalReport1.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -258,6 +273,17 @@
     <None Include="coursesDataSet.xss">
       <DependentUpon>coursesDataSet.xsd</DependentUpon>
     </None>
+    <None Include="coursesDataSet2.xsc">
+      <DependentUpon>coursesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="coursesDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>coursesDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="coursesDataSet2.xss">
+      <DependentUpon>coursesDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="courses_projectDataSet.xsc">
       <DependentUpon>courses_projectDataSet.xsd</DependentUpon>
     </None>
@@ -277,6 +303,28 @@
     </None>
     <None Include="courses_projectDataSet1.xss">
       <DependentUpon>courses_projectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="courses_projectDataSet2.xsc">
+      <DependentUpon>courses_projectDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="courses_projectDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>courses_projectDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="courses_projectDataSet2.xss">
+      <DependentUpon>courses_projectDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

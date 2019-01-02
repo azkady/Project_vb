@@ -45,6 +45,7 @@ Partial Class tableSchedule
         Me.Label8 = New System.Windows.Forms.Label()
         Me.DatePicker = New System.Windows.Forms.DateTimePicker()
         Me.cbTeacherName = New System.Windows.Forms.ComboBox()
+        Me.btnPrint = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tableSchedule1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -54,7 +55,7 @@ Partial Class tableSchedule
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(562, 404)
+        Me.PictureBox1.Location = New System.Drawing.Point(561, 404)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(154, 103)
         Me.PictureBox1.TabIndex = 102
@@ -62,7 +63,7 @@ Partial Class tableSchedule
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(708, 352)
+        Me.btnBack.Location = New System.Drawing.Point(637, 352)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(96, 30)
         Me.btnBack.TabIndex = 98
@@ -71,7 +72,7 @@ Partial Class tableSchedule
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(586, 352)
+        Me.btnDelete.Location = New System.Drawing.Point(535, 352)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(96, 30)
         Me.btnDelete.TabIndex = 97
@@ -150,7 +151,7 @@ Partial Class tableSchedule
         '
         'btnUp
         '
-        Me.btnUp.Location = New System.Drawing.Point(453, 352)
+        Me.btnUp.Location = New System.Drawing.Point(433, 352)
         Me.btnUp.Name = "btnUp"
         Me.btnUp.Size = New System.Drawing.Size(96, 30)
         Me.btnUp.TabIndex = 89
@@ -266,6 +267,15 @@ Partial Class tableSchedule
         Me.cbTeacherName.Size = New System.Drawing.Size(185, 32)
         Me.cbTeacherName.TabIndex = 112
         '
+        'btnPrint
+        '
+        Me.btnPrint.Location = New System.Drawing.Point(739, 352)
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Size = New System.Drawing.Size(83, 30)
+        Me.btnPrint.TabIndex = 113
+        Me.btnPrint.Text = "Print"
+        Me.btnPrint.UseVisualStyleBackColor = True
+        '
         'tableSchedule
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -274,6 +284,7 @@ Partial Class tableSchedule
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(825, 519)
+        Me.Controls.Add(Me.btnPrint)
         Me.Controls.Add(Me.cbTeacherName)
         Me.Controls.Add(Me.DatePicker)
         Me.Controls.Add(Me.Label8)
@@ -328,4 +339,5 @@ Partial Class tableSchedule
     Friend WithEvents Label8 As Label
     Friend WithEvents DatePicker As DateTimePicker
     Friend WithEvents cbTeacherName As ComboBox
+    Friend WithEvents btnPrint As Button
 End Class
